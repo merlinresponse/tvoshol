@@ -17,11 +17,10 @@ class ShopController extends Controller
         return view('shops.index', compact('shops'));
     }
     
-    public function show($id)
+    public function show(Shop $shop)
     {
-    
-    $shop = Shop::find($id);
-    return $shop;
+
+        return view('shops.show', compact('shop'));
         
     }
     
