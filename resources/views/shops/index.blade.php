@@ -7,7 +7,10 @@
     
         <div>
             
-            {{ $shop->title }}
+            {{ $shop->posnumber }}
+            </br>
+            {{ $shop->posname }}    
+            </br>
             
         </div>        
     
