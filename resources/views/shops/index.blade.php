@@ -9,8 +9,6 @@
             
             {{ $shop->posnumber }}
             </br>
-            {{ $shop->posname }}    
-            </br>
             
         </div>        
     
