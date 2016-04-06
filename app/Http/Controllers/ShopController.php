@@ -21,7 +21,7 @@ class ShopController extends Controller
     {
     
     $shop = Shop::find($id);
-    return $card;
+    return $shop;
         
     }
     
