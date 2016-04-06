@@ -12,7 +12,7 @@ class ShopController extends Controller
 {
     public function index()
     {
-        $shops = Card::all();
+        $shops = Shop::all();
         
         return view('shops.index', compact('shops'));
     }
@@ -20,7 +20,7 @@ class ShopController extends Controller
     public function show($id)
     {
     
-    $shop = Card::find($id);
+    $shop = Shop::find($id);
     return $card;
         
     }
