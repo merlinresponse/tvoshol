@@ -14,7 +14,20 @@ class CreateShopsTable extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('posnumber');
+            $table->string('posname');
+            $table->text('extra');
+            $table->boolean('tent');
+            $table->boolean('lantaarn');
+            $table->boolean('ipad');
+            $table->boolean('beachvlag');
+            $table->string('ipadnummer');
+            $table->boolean('contact');
+            $table->date('afleverdatum');
+            $table->time('aflevertijd');
+            $table->date('ophaaldatum');
+            $table->time('ophaaltijd');
+            $table->boolean('flushed');
             $table->timestamps();
         });
     }
