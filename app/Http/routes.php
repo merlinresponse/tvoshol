@@ -19,4 +19,4 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('shops', 'ShopController@index');
+Route::get('/shops', 'ShopController@index');
