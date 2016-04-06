@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>A Shop</h1>
-        
-    @foreach ($shops as $shop)
+
+
     
        
             
@@ -12,6 +11,6 @@
             
            
     
-    @endforeach    
+   
         
 @stop
