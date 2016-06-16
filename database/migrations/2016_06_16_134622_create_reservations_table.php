@@ -12,13 +12,13 @@ class CreateReservationsTable extends Migration
      */
     public function up()
     {
-            Schema::create('shops', function (Blueprint $table) {
+            Schema::create('reservations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('aantal');
             $table->string('voornaam');
             $table->string('naam');
             $table->string('email');
-            $table->string('tel');
+            $table->string('telSHOW');
             $table->text('opmerkingen');
             $table->boolean('bevestigd');
             $table->date('reservatiedatum');
