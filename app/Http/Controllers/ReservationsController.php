@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Request;
-use App\Providers\Reservation;
+use App\Reservation;
 
 use App\Http\Requests;
 
