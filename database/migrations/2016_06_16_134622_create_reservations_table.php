@@ -12,7 +12,19 @@ class CreateReservationsTable extends Migration
      */
     public function up()
     {
-        //
+            Schema::create('shops', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('aantal');
+            $table->string('voornaam');
+            $table->string('naam');
+            $table->string('email');
+            $table->string('tel');
+            $table->text('opmerkingen');
+            $table->boolean('bevestigd');
+            $table->date('reservatiedatum');
+            $table->time('reservatietijd');
+            $table->timestamps();
+        });
     }
 
     /**
