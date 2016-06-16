@@ -18,7 +18,7 @@ class CreateReservationsTable extends Migration
             $table->string('voornaam');
             $table->string('naam');
             $table->string('email');
-            $table->string('telSHOW');
+            $table->string('tel');
             $table->text('opmerkingen');
             $table->boolean('bevestigd');
             $table->date('reservatiedatum');
