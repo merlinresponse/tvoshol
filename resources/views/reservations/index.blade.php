@@ -7,8 +7,13 @@
     
         <div>
             
-            {{ $reservation->voornaam }}
+            {{ $reservation->voornaam }} 
             </br>
+            {{ Form::open('reservations/delete', 'DELETE')}}
+            {{ Form::hidden('id', $reservation->id)}}
+            {{ Form::submit('verwijderen')}}
+            {{ Form::close()}}
+            <hr>
             
         </div>        
     
