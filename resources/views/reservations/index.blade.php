@@ -9,7 +9,7 @@
             
             {{ $reservation->voornaam }} 
             </br>
-            <form method="DELETE" action="/reservations/delete">
+            <form method="POST" action="/reservations/delete">
                 <input type="hidden" name="_method" value="delete" />
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <input type="hidden" name="id" value="{{ $reservation->id }}">
