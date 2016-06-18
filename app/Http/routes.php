@@ -20,7 +20,7 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 
 Route::get('/reservations', 'ReservationsController@index');
-Route::get('/addreservation', 'ReservationsController@create');
-
+Route::get('/addreservation', 'ReservationsController@add');
+Route::post('/reservations/{reservation}', 'ReservationsController@store');
 
 Route::get('/shops/{shop}', 'ShopController@show');

@@ -4,7 +4,7 @@
     <h1>Add a Reservation</h1>
         <div>
             
-           <form>
+           <form method="POST">
                 <div class="form-group">
                   <label for="voornaam">Voornaam</label>
                   <input type="text" class="form-control" id="voornaam" placeholder="Voornaam">

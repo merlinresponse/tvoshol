@@ -16,10 +16,16 @@ class ReservationsController extends Controller
     
     }
     
-        public function create(){
+        public function add(){
         
         $reservations = Reservation::all();
         return view('reservations.addReservation', compact('reservations'));
+    
+    }
+    
+        public function store(Request $request){
+        
+            return $request->all();   
     
     }
     
