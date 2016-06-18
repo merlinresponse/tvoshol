@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Reservation;
 
 use App\Http\Requests;
@@ -23,9 +22,9 @@ class ReservationsController extends Controller
     
     }
     
-        public function store(Request $request){
+        public function store(){
         
-            return $request->all();   
+            return request()->all();   
     
     }
     
