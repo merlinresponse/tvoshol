@@ -6,24 +6,22 @@
             
            <form>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  <label for="voornaam">Voornaam</label>
+                  <input type="text" class="form-control" id="voornaam" placeholder="Voornaam">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <label for="naam">Naam</label>
+                  <input type="text" class="form-control" id="naam" placeholder="Naam">
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
-                  <p class="help-block">Example block-level help text here.</p>
+                  <label for="aantal">Aantal personen</label>
+                  <input type="text" class="form-control" id="aantal" placeholder="Aantal personen">
+                </div>                     
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
                 </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Check me out
-                  </label>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default">Versturen</button>
             </form>
             
         </div>        
