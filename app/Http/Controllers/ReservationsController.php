@@ -29,7 +29,7 @@ class ReservationsController extends Controller
             
             $reservation->voornaam = $request->voornaam;
             
-            $reservation-save();
+            $reservation->save();
     
     }
     
