@@ -2,9 +2,6 @@
 
 @section('content')
     <h1>Add a Reservation</h1>
-        
-    @foreach ($reservations as $reservation)
-    
         <div>
             
            <form>
@@ -30,7 +27,4 @@
             </form>
             
         </div>        
-    
-    @endforeach    
-        
 @stop
