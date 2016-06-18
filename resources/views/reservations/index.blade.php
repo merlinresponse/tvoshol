@@ -9,10 +9,13 @@
             
             {{ $reservation->voornaam }} 
             </br>
-            {{ Form::open('reservations/delete', 'DELETE')}}
-            {{ Form::hidden('id', $reservation->id)}}
-            {{ Form::submit('verwijderen')}}
-            {{ Form::close()}}
+            <form method="DELETE" action="/reservations/delete">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type="hidden" name="id" value="{{ $reservation->id }}">
+                <button type="submit" class="btn btn-default">Verwijderen</button>
+            </form>
+            
+            
             <hr>
             
         </div>        
