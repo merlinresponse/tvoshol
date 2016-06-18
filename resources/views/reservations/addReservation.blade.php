@@ -5,6 +5,7 @@
         <div>
             
            <form method="POST" action="/reservations">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
                   <label for="voornaam">Voornaam</label>
                   <input type="text" class="form-control" id="voornaam" placeholder="Voornaam">
