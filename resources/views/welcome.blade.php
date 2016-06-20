@@ -156,7 +156,7 @@
         <ul class="featured-list">
           <li class="m-b-lg">
             <div class="featured-list-icon text-primary">
-              <span class="icon icon-image"></span>
+              <span class="icon icon-apple"></span>
             </div>
             <p class="featured-list-icon-text m-b-0"><strong>Kwaliteit en Kwantiteit zijn onze troeven.</strong></p>
             <p class="featured-list-icon-text">
@@ -166,7 +166,7 @@
 
           <li class="m-b-lg">
             <div class="featured-list-icon text-primary">
-              <span class="icon icon-hour-glass"></span>
+              <span class="icon icon-glass"></span>
             </div>
             <p class="featured-list-icon-text m-b-0"><strong>Genieten voor Jong en Oud</strong></p>
             <p class="featured-list-icon-text">
