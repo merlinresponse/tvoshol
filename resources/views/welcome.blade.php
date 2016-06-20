@@ -165,9 +165,9 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-image"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Upload unlimited images</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>Kwaliteit en Kwantiteit zijn onze troeven.</strong></p>
             <p class="featured-list-icon-text">
-              We process all the images you upload and take full advantage of modern cloud based storage to host them at blazing fast speeds.
+                Sinds 1990 is Gasthof 't Voshol de referentie voor een eerlijke en dagverse keuken.
             </p>
           </li>
 
@@ -175,9 +175,9 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-hour-glass"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Tracked time savings</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>Genieten voor Jong en Oud</strong></p>
             <p class="featured-list-icon-text">
-              This means you save tons of time by using our world class task manager and calendar and constantly reminds you how great it is.
+                Ons restaurant biedt voor ieder wat wils. Van romantisch moment tot heus familiediner, voor iedereen wat in Gasthof 't Voshol.
             </p>
           </li>
 
