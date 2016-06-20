@@ -227,11 +227,11 @@
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
                 <p class="lead m-x-auto text-center">
-                  Instead of guessing how much time you spend on each of your tasks, why not have automagically record everything and have easy reporting without lifting a finger? <span class="hidden-xs">Well now you can with ease.</span>
+                Steed iets te beleven.
                 </p>
               </div>
             </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide3.png">
+            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide1_low.jpg">
           </div>
         </div>
       </div>
@@ -241,11 +241,11 @@
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
                 <p class="lead m-x-auto text-center">
-                  Instead of guessing how much time you spend on each of your tasks, why not have automagically record everything and have easy reporting without lifting a finger? <span class="hidden-xs">Well now you can with ease.</span>
+                  Gezellige terras onder de kerktoren.
                 </p>
               </div>
             </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="img/iphone-flat-sized.jpg">
+            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide2_low.jpg">
           </div>
         </div>
       </div>
@@ -255,11 +255,11 @@
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
                 <p class="lead m-x-auto text-center">
-                  Instead of guessing how much time you spend on each of your tasks, why not have automagically record everything and have easy reporting without lifting a finger? <span class="hidden-xs">Well now you can with ease.</span>
+                Gelegen op het knooppunt van vele touristische routes.
                 </p>
               </div>
             </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="img/iphone-flat-sized.jpg">
+            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide3_low.jpg">
           </div>
         </div>
       </div>
