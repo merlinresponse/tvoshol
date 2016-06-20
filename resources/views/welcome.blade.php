@@ -104,7 +104,7 @@
   </div>
 </div>
 
-<div class="block block-bordered-lg p-b-0 app-block-stats">
+<div class="block block-bordered-lg p-b-0 app-block-fox">
   <div class="container">
     <div class="row">
     <div class="col-md-5 col-sm-6">
