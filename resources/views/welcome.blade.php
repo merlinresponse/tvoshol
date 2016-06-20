@@ -231,7 +231,7 @@
                 </p>
               </div>
             </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="img/iphone-flat-sized.jpg">
+            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide3.png">
           </div>
         </div>
       </div>
