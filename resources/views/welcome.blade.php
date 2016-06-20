@@ -84,19 +84,11 @@
 </nav>
 
 
-<div class="block app-block-intro">
-  <div class="container text-center">
-    <h1 class="block-title m-b-sm text-uppercase app-myphone-brand">Mochi</h1>
-    <p class="lead m-b-lg p-b-md">Task management and a calendar for all</p>
-    <img src="img/logo_tvoshol.gif">
-  </div>
-</div>
-
 <div class="block block-bordered-lg">
   <div class="container text-center app-translate-15" data-transition="entrance">
     <img src="img/logo_tvoshol.gif">
     <blockquote class="pull-quote">
-        <cite>Restaurant & Tearoom</cite>      
+        <h1 class="block-title m-b-sm text-uppercase app-myphone-brand">Restaurant & Tearoom</h1>      
       <p>
         Leisele, gelegen "Bachten de Kupe", aan de grens van ons Belgisch grondgebied, verdoken in de verre Westhoek, een mooie landelijke gemeente, met beschermd dorpsgezicht op zowat 12km van Veurne, 15km van de Kust, 25km van Ieper en 4km van het franse Hondschoote. Filmdorp tijdens de opnames van VRT-feuilleton "De Bossen van Vlaanderen". Op het dorpsplein rechtover de Kerk en de kiosk.
       </p>
