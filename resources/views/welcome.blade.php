@@ -311,7 +311,7 @@
 <div class="block block-bordered-lg text-center">
   <div class="container-fluid">
     <p class="lead m-b-md">
-      Bij Gasthof 't Voshol kan u meteen online reserveren. Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
+      Bij Gasthof 't Voshol kan u meteen online reserveren.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
     <form class="form-inline">
       <input class="form-control m-b" placeholder="Email Address">
