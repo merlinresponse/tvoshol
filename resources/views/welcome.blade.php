@@ -119,31 +119,8 @@
           Gasthof 't Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. U kan deze via onderstaande link meteen raadplegen.
         </p>
         <div class="row m-y-md">
-          <div class="col-xs-6">
-            <div class="statcard">
-              <h1 class="statcard-number block-title">92m</h1>
-              <span class="statcard-desc">Downloads</span>
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <div class="statcard">
-              <h1 class="statcard-number block-title">8m</h1>
-              <span class="statcard-desc">Reviews</span>
-            </div>
-          </div>
-        </div>
-        <div class="row hidden-sm">
-          <div class="col-xs-6 m-b-lg">
-            <div class="statcard">
-              <h1 class="statcard-number block-title">78k</h1>
-              <span class="statcard-desc">Developers</span>
-            </div>
-          </div>
-          <div class="col-xs-6 m-b-lg">
-            <div class="statcard">
-              <h1 class="statcard-number block-title">97%</h1>
-              <span class="statcard-desc">Happiness</span>
-            </div>
+          <div class="col-xs-12">
+            <button class="btn btn-primary m-b">Menukaart raadplegen</button>
           </div>
         </div>
       </div>
