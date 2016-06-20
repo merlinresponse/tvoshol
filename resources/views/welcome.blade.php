@@ -70,8 +70,11 @@
           <a href="../minimal/index.html">waardebon</a>
         </li>
         <li >
-          <a href="../bold/index.html">gin</a>
+          <a href="../bold/index.html">menu</a>
         </li>
+        <li >
+          <a href="../bold/index.html">gin</a>
+        </li>            
         <li >
           <a href="../docs/index.html">contact</a>
         </li>
