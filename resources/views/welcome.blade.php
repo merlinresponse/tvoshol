@@ -311,7 +311,7 @@
 <div class="block block-bordered-lg text-center">
   <div class="container-fluid">
     <p class="lead m-b-md">
-      Join over 900,000 nerds already using Mochi. Get the Mochi App <strong>free</strong> forever!
+      Bij Gasthof 't Voshol kan u meteen online reserveren. Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
     <form class="form-inline">
       <input class="form-control m-b" placeholder="Email Address">
