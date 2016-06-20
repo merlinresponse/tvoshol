@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,22 +58,22 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="../">
-        <span>Mochi</span>
+        <span>Gasthof 't Voshol</span>
       </a>
     </div>
     <div class="navbar-collapse collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li >
-          <a href="..//index.html">Startup</a>
+          <a href="..//index.html">reserveren</a>
         </li>
         <li class="active">
-          <a href="../minimal/index.html">Minimal</a>
+          <a href="../minimal/index.html">waardebon</a>
         </li>
         <li >
-          <a href="../bold/index.html">Bold</a>
+          <a href="../bold/index.html">gin</a>
         </li>
         <li >
-          <a href="../docs/index.html">Docs</a>
+          <a href="../docs/index.html">contact</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
