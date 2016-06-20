@@ -58,7 +58,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="../">
-        <span>Gasthof 't Voshol</span>
+        <img src="img/logo_tvoshol.gif">
       </a>
     </div>
     <div class="navbar-collapse collapse" id="navbar-collapse">
@@ -227,7 +227,7 @@
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
                 <p class="lead m-x-auto text-center">
-                Steed iets te beleven.
+                Steeds iets te beleven.
                 </p>
               </div>
             </div>
