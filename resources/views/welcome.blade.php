@@ -20,8 +20,8 @@
 
     
       <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
-      <link href="../assets/css/toolkit-minimal.css" rel="stylesheet">
-      <link href="../assets/css/application-minimal.css" rel="stylesheet">
+      <link href="../opendays/app/assets/css/toolkit-minimal.css" rel="stylesheet">
+      <link href="../opendays/app/assets/css/application-minimal.css" rel="stylesheet">
     
 
     
@@ -89,14 +89,14 @@
   <div class="container text-center">
     <h1 class="block-title m-b-sm text-uppercase app-myphone-brand">Mochi</h1>
     <p class="lead m-b-lg p-b-md">Task management and a calendar for all</p>
-    <img src="../assets/img/iphone-to-iphone-sized.jpg">
+    <img src="../opendays/app/assets/img/iphone-to-iphone-sized.jpg">
   </div>
 </div>
 
 <div class="block block-bordered-lg">
   <div class="container text-center app-translate-15" data-transition="entrance">
     <blockquote class="pull-quote">
-      <img class="img-circle" src="../assets/img/avatar-mdo.png">
+      <img class="img-circle" src="../opendays/app/assets/img/avatar-mdo.png">
       <p>
         “Task management. Calendars. Email. They all have one thing in common&hellip;literally no one enjoys managing them. Thanks to years of research, we can now predict every single thing you'll ever have to do or go to. Yeah, we're that good.”
       </p>
@@ -110,7 +110,7 @@
     <div class="row">
       <div class="col-md-7 col-sm-6">
         <img
-          src="../assets/img/iphone-perspective-sized.jpg"
+          src="../opendays/app/assets/img/iphone-perspective-sized.jpg"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
@@ -230,7 +230,7 @@
                 </p>
               </div>
             </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="../assets/img/iphone-flat-sized.jpg">
+            <img class="img-responsive m-t-lg app-block-game-img" src="../opendays/app/assets/img/iphone-flat-sized.jpg">
           </div>
         </div>
       </div>
@@ -244,7 +244,7 @@
                 </p>
               </div>
             </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="../assets/img/iphone-flat-sized.jpg">
+            <img class="img-responsive m-t-lg app-block-game-img" src="../opendays/app/assets/img/iphone-flat-sized.jpg">
           </div>
         </div>
       </div>
@@ -258,7 +258,7 @@
                 </p>
               </div>
             </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="../assets/img/iphone-flat-sized.jpg">
+            <img class="img-responsive m-t-lg app-block-game-img" src="../opendays/app/assets/img/iphone-flat-sized.jpg">
           </div>
         </div>
       </div>
@@ -305,7 +305,7 @@
     </div>
   </div>
   <div class="text-right app-block-design-img">
-    <img src="../assets/img/iphone-reverse-perspective-sized.jpg" class="app-translate-50" data-transition="entrance">
+    <img src="../opendays/app/assets/img/iphone-reverse-perspective-sized.jpg" class="app-translate-50" data-transition="entrance">
   </div>
 </div>
 
@@ -365,9 +365,9 @@
 </div>
 
 
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/toolkit.js"></script>
-    <script src="../assets/js/application.js"></script>
+    <script src="../opendays/app/assets/js/jquery.min.js"></script>
+    <script src="../opendays/app/assets/js/toolkit.js"></script>
+    <script src="../opendays/app/assets/js/application.js"></script>
   </body>
 </html>
 
