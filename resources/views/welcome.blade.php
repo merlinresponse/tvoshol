@@ -311,7 +311,7 @@
 <div class="block block-bordered-lg text-center">
   <div class="container-fluid">
     <p class="lead m-b-md">
-      Bij Gasthof 't Voshol kan u meteen online reserveren.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
+      Bij Gasthof 't Voshol kan u meteen <srtong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
     <form class="form-inline">
       <input class="form-control m-b" placeholder="Voornaam">
@@ -325,8 +325,7 @@
       <button class="btn btn-primary m-b">Reservatie versturen</button>
     </form>
     <small class="text-muted">
-      By clicking "Get started" I agree to Mochi's
-      <a href="#">Terms of service</a>
+      Opgepast, uw reservatie is pas definitief na bevestiging door Gasthof 't Voshol.
     </small>
   </div>
 </div>
