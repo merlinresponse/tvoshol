@@ -314,9 +314,15 @@
       Bij Gasthof 't Voshol kan u meteen online reserveren.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
     <form class="form-inline">
-      <input class="form-control m-b" placeholder="Email Address">
-      <input class="form-control m-b" type="password" placeholder="Create a Password">
-      <button class="btn btn-primary m-b">Get started</button>
+      <input class="form-control m-b" placeholder="Voornaam">
+      <input class="form-control m-b" type="password" placeholder="Naam">
+        <input class="form-control m-b" placeholder="Email">
+        </br>
+      <input class="form-control m-b" type="password" placeholder="Datum & Tijdstip">
+      <input class="form-control m-b" placeholder="Aantal personen">
+      </br>
+      <input class="form-control m-b" placeholder="Opmerkingen">  
+      <button class="btn btn-primary m-b">Reservatie versturen</button>
     </form>
     <small class="text-muted">
       By clicking "Get started" I agree to Mochi's
