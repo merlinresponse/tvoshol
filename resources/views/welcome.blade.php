@@ -155,7 +155,7 @@
   <div class="container">
     <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text-center m-b-lg">
-      <p class="lead m-x-auto">With over <strong>20 years of collective experience</strong>, we take the unthinkable and make it just a couple quick taps away.</p>
+      <p class="lead m-x-auto">Sinds de start houdt Gasthof 't Voshol vast aan deze <strong>troeven</strong>. </p>
     </div>
     </div>
     <div class="row">
