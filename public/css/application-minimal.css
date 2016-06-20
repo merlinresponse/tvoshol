@@ -31,7 +31,7 @@
 
 /* block img */
 .app-block-game img,
-.app-block-stats img {
+.app-block-stats img{
   width: 100%;
 }
 @media (max-width: 480px) {
