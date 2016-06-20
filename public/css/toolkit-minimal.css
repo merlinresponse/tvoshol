@@ -6080,6 +6080,13 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+/*addition maxime*/
+
+.icon {
+  color: brown;
+}
+
 .icon:before {
   position: relative;
   top: 2px;
