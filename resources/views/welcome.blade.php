@@ -116,7 +116,7 @@
       </div>
       <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
-          We've been working for over 100 years to build the best possible app for all your needs. We're glad that others agree.
+          Gasthof 't Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. U kan deze via onderstaande link meteen raadplegen.
         </p>
         <div class="row m-y-md">
           <div class="col-xs-6">
@@ -311,7 +311,7 @@
 <div class="block block-bordered-lg text-center">
   <div class="container-fluid">
     <p class="lead m-b-md">
-      Bij Gasthof 't Voshol kan u meteen <srtong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
+      Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
     <form class="form-inline">
       <input class="form-control m-b" placeholder="Voornaam">
