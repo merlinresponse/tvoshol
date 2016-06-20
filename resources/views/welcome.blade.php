@@ -88,7 +88,7 @@
   <div class="container text-center">
     <h1 class="block-title m-b-sm text-uppercase app-myphone-brand">Mochi</h1>
     <p class="lead m-b-lg p-b-md">Task management and a calendar for all</p>
-    <img src="img/iphone-to-iphone-sized.jpg">
+    <img src="img/logo_tvoshol.gif">
   </div>
 </div>
 
