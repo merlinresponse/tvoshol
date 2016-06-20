@@ -109,7 +109,7 @@
     <div class="row">
       <div class="col-md-7 col-sm-6">
         <img
-          src="img/iphone-perspective-sized.jpg"
+          src="img/foxginetiket_fles.png"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
