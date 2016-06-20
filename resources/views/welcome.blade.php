@@ -109,13 +109,12 @@
     <div class="row">
     <div class="col-md-7 col-sm-6">
         <img
-          src="img/fox_neutral.png"
+          src="img/logo_tvoshol.gif"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
       </div> 
       <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
-        <img src="img/logo_tvoshol.gif">
         <p class="lead">
           Gasthof 't Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. U kan deze via onderstaande link meteen raadplegen.
         </p>
