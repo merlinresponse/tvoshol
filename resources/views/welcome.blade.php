@@ -320,8 +320,8 @@
         </br>
       <input class="form-control m-b" type="password" placeholder="Datum & Tijdstip">
       <input class="form-control m-b" placeholder="Aantal personen">
+      <input class="form-control m-b" placeholder="Opmerkingen">
       </br>
-      <input class="form-control m-b" placeholder="Opmerkingen">  
       <button class="btn btn-primary m-b">Reservatie versturen</button>
     </form>
     <small class="text-muted">
