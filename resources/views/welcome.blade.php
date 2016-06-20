@@ -97,7 +97,7 @@
     <blockquote class="pull-quote">
       <img class="img-circle" src="img/avatar-mdo.png">
       <p>
-        “Task management. Calendars. Email. They all have one thing in common&hellip;literally no one enjoys managing them. Thanks to years of research, we can now predict every single thing you'll ever have to do or go to. Yeah, we're that good.”
+        Leisele, gelegen "Bachten de Kupe", aan de grens van ons Belgisch grondgebied, verdoken in de verre Westhoek, een mooie landelijke gemeente, met beschermd dorpsgezicht op zowat 12km van Veurne, 15km van de Kust, 25km van Ieper en 4km van het franse Hondschoote. Filmdorp tijdens de opnames van VRT-feuilleton "De Bossen van Vlaanderen". Op het dorpsplein rechtover de Kerk en de kiosk.
       </p>
       <cite>Mark Otto, Creator of Mochi</cite>
     </blockquote>
