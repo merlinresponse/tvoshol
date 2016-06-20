@@ -107,7 +107,7 @@
 <div class="block block-bordered-lg p-b-0 app-block-stats">
   <div class="container">
     <div class="row">
-      <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
+      <div class="col-md-7 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
           Gasthof 't Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. U kan deze via onderstaande link meteen raadplegen.
         </p>
@@ -117,7 +117,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-7 col-sm-6">
+      <div class="col-md-5 col-sm-6">
         <img
           src="img/foxginetiket_fles.png"
           class="app-translate-5"
