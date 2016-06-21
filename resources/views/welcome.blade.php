@@ -100,7 +100,7 @@
     <div class="row">
     <div class="col-md-7 col-sm-6">
         <img
-          src="img/fox_neutral.png"
+          src="img/meat_low.png"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
@@ -183,7 +183,7 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-cloud"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Share from anywhere</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>Knooppunt van fietsroutes</strong></p>
             <p class="featured-list-icon-text">
               Do it over the cloud, from anywhere, on any device. Mochi is super fast and always available, to not only you, but all your friends
             </p>
@@ -193,7 +193,7 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-emoji-neutral"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Use stickers and express yourself</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>Duurzame horeca</strong></p>
             <p class="featured-list-icon-text">
               Share with emoji anyone in the world. We've baked them directly into Mochi. These probably won't help with productivity though.
             </p>
