@@ -125,11 +125,11 @@
     <div class="row">
       <div class="col-md-7 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
-          Gasthof 't Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. U kan deze via onderstaande link meteen raadplegen.
+FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water uit de Dolomieten. Toetsen van citrus en lavendel combineren tot een fris en zuiders boeket. Samengesteld door B. Dedeckere. Enjoy Responsibly.
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
-            <button class="btn btn-primary m-b">Menukaart raadplegen</button>
+            <button class="btn btn-primary m-b">Uw Foxgin bestellen</button>
           </div>
         </div>
       </div>
