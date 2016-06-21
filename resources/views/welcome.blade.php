@@ -100,7 +100,7 @@
     <div class="row">
     <div class="col-md-7 col-sm-6">
         <img
-          src="img/meat_low.png"
+          src="img/meat_low.jpg"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
