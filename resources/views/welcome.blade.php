@@ -64,19 +64,19 @@
     <div class="navbar-collapse collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li >
-          <a href="..//index.html">reserveren</a>
+          <a href="#reserveren">reserveren</a>
         </li>
         <li class="active">
-          <a href="../minimal/index.html">waardebon</a>
+          <a href="waardebon">waardebon</a>
         </li>
         <li >
-          <a href="../bold/index.html">menu</a>
+          <a href="#menu">menu</a>
         </li>
         <li >
-          <a href="../bold/index.html">gin</a>
+          <a href="gin">gin</a>
         </li>            
         <li >
-          <a href="../docs/index.html">contact</a>
+          <a href="contact">contact</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -95,7 +95,7 @@
   </div>
 </div>
 
-<div class="block block-bordered-lg p-b-0 app-block-stats">
+<div id="menu" class="block block-bordered-lg p-b-0 app-block-stats">
   <div class="container">
     <div class="row">
     <div class="col-md-7 col-sm-6">
@@ -120,7 +120,7 @@
 </div>
 
 
-<div class="block block-bordered-lg p-b-0 app-block-stats">
+<div id="gin" class="block block-bordered-lg p-b-0 app-block-stats">
   <div class="container">
     <div class="row">
       <div class="col-md-7 col-sm-6 text-xs-center text-sm-left">
@@ -301,7 +301,7 @@ FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water 
   </div>
 </div>
 
-<div class="block block-bordered-lg text-center">
+<div id="reserveren" class="block block-bordered-lg text-center">
   <div class="container-fluid">
     <p class="lead m-b-md">
       Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
@@ -326,7 +326,7 @@ FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water 
   </div>
 </div>
 
-<div class="block app-block-footer">
+<div id="contact" class="block app-block-footer">
   <div class="container">
     <div class="row">
       <div class="col-sm-2 m-b">
