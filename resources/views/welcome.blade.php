@@ -306,12 +306,13 @@ FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water 
     <p class="lead m-b-md">
       Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
-    <form class="form-inline">
-      <input class="form-control m-b" placeholder="Voornaam">
-      <input class="form-control m-b" type="password" placeholder="Naam">
-        <input class="form-control m-b" placeholder="Email">
+    <form class="form-inline" method="POST" action="/reservations">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+      <input name="voornaam" class="form-control m-b" placeholder="Voornaam">
+      <input name="naam" class="form-control m-b" placeholder="Naam">
+        <input name="email" class="form-control m-b" placeholder="Email">
         </br>
-      <input class="form-control m-b" type="password" placeholder="Datum & Tijdstip">
+      <input class="form-control m-b" placeholder="Datum & Tijdstip">
       <input class="form-control m-b" placeholder="Aantal personen">
       <input class="form-control m-b" placeholder="Opmerkingen">
       </br>
