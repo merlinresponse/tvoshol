@@ -315,6 +315,7 @@ FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water 
       <input name="reservatiedatum" class="form-control m-b" placeholder="Datum">
       <input name="reservatietijd" class="form-control m-b" placeholder="Tijdstip">
       <input name="aantal" class="form-control m-b" placeholder="Aantal personen">
+      </br>
       <input name="opmerkingen" class="form-control m-b" placeholder="Opmerkingen">
       </br>
       <button class="btn btn-primary m-b">Reservatie versturen</button>
