@@ -67,16 +67,16 @@
           <a href="#reserveren">reserveren</a>
         </li>
         <li class="active">
-          <a href="waardebon">waardebon</a>
+          <a href="#waardebon">waardebon</a>
         </li>
         <li >
           <a href="#menu">menu</a>
         </li>
         <li >
-          <a href="gin">gin</a>
+          <a href="#gin">gin</a>
         </li>            
         <li >
-          <a href="contact">contact</a>
+          <a href="#contact">contact</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -271,33 +271,13 @@ FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water 
     <div class="row pos-r">
       <div class="col-sm-7 text-xs-center text-sm-left">
         <p class="lead">
-          We focused on design relentlessly. We loved it so much, we spent just as much time taking these crazy high resolution photos. Here are some more stats on that.
+          Bent u fan van Gasthof 't Voshol? Deel uw ervaring met uw vrienden en schenk hen de enige echte Gasthof 't Voshol waardebon. Deze leuke attentie is beschikbaar op eenvoudige vraag in het restaurant.
         </p>
-        <div class="row">
-          <div class="col-xs-4">
-            <div class="statcard">
-              <h1 class="statcard-number block-title">1m</h1>
-              <span class="statcard-desc">Photos</span>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="statcard">
-              <h1 class="statcard-number block-title">2k</h1>
-              <span class="statcard-desc">gigs</span>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="statcard">
-              <h1 class="statcard-number block-title">7</h1>
-              <span class="statcard-desc">Friends</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div class="text-right app-block-design-img">
-    <img src="img/iphone-reverse-perspective-sized.jpg" class="app-translate-50" data-transition="entrance">
+    <img src="img/waardebon.png" class="app-translate-50" data-transition="entrance">
   </div>
 </div>
 
