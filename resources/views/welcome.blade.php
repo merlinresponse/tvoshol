@@ -125,7 +125,7 @@
     <div class="row">
       <div class="col-md-7 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
-FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water uit de Dolomieten. Toetsen van citrus en lavendel combineren tot een fris en zuiders boeket. Samengesteld door B. Dedeckere. Enjoy Responsibly.
+<strong>FOXGIN is een exclusieve in Belgie gestookte gin</strong>, gemaakt van het zuivere water uit de Dolomieten. Toetsen van citrus en lavendel combineren tot een fris en zuiders boeket. Samengesteld door B. Dedeckere. <strong>Enjoy Responsibly.</strong>
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
@@ -271,7 +271,7 @@ FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water 
     <div class="row pos-r">
       <div class="col-sm-5 text-xs-center text-sm-left">
         <p class="lead">
-          Bent u fan van Gasthof 't Voshol? Deel uw ervaring met uw vrienden en schenk hen de enige echte Gasthof 't Voshol waardebon. Deze leuke attentie is beschikbaar op eenvoudige vraag in het restaurant.
+          <strong>Bent u fan van Gasthof 't Voshol?</strong> Deel uw ervaring met uw vrienden en schenk hen de enige echte Gasthof 't Voshol waardebon. Deze leuke attentie is beschikbaar op eenvoudige vraag in het restaurant.
         </p>
       </div>
       <div class="col-sm-7">
