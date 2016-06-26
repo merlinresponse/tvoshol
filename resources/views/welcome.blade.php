@@ -274,10 +274,10 @@ FOXGIN is een exclusieve in Belgie gestookte gin, gemaakt van het zuivere water 
           Bent u fan van Gasthof 't Voshol? Deel uw ervaring met uw vrienden en schenk hen de enige echte Gasthof 't Voshol waardebon. Deze leuke attentie is beschikbaar op eenvoudige vraag in het restaurant.
         </p>
       </div>
+      <div class="col-sm-7">
+        <img src="img/waardebon_crop.png" class="app-translate-5" data-transition="entrance">
+        </div>    
     </div>
-  </div>
-  <div class="col-sm-7">
-    <img src="img/waardebon_crop.png" class="app-translate-5" data-transition="entrance">
   </div>
 </div>
 
