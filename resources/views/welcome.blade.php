@@ -181,7 +181,7 @@
 
           <li class="m-b-lg">
             <div class="featured-list-icon text-primary">
-              <span class="icon icon-cloud"></span>
+              <span class="icon icon-tripadvisor"></span>
             </div>
             <p class="featured-list-icon-text m-b-0"><strong>Knooppunt van fietsroutes</strong></p>
             <p class="featured-list-icon-text">
@@ -191,7 +191,7 @@
 
           <li class="m-b-lg">
             <div class="featured-list-icon text-primary">
-              <span class="icon icon-emoji-neutral"></span>
+              <span class="icon icon-tree"></span>
             </div>
             <p class="featured-list-icon-text m-b-0"><strong>Duurzame horeca</strong></p>
             <p class="featured-list-icon-text">
