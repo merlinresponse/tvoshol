@@ -82,6 +82,15 @@
     </div><!--/.nav-collapse -->
   </div>
 </nav>
+    
+    
+    @if(Session::has('success'))
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Perfect!</strong> {{ Session::get('message', '') }}
+    </div>
+    @endif
+        
 
 <div class="block">
   <div class="container text-center app-translate-15" data-transition="entrance">
@@ -286,13 +295,6 @@
     <p class="lead m-b-md">
       Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
-    
-    @if(Session::has('success'))
-    <div class="alert alert-success">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <strong>Success!</strong> {{ Session::get('message', '') }}
-    </div>
-    @endif
     
     <form class="form-inline" method="POST" action="/reservations">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
