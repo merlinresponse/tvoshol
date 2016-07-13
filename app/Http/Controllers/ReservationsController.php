@@ -31,7 +31,7 @@ class ReservationsController extends Controller
             
             $reservation->save();
             
-            return redirect('/reservations');
+            return Redirect::to('/')->with('success', true)->with('message','Reservatie opgeslagen.');
     
     }
     
