@@ -194,7 +194,7 @@
             </div>
             <p class="featured-list-icon-text m-b-0"><strong>Knooppunt van fietsroutes</strong></p>
             <p class="featured-list-icon-text">
-              Do it over the cloud, from anywhere, on any device. Mochi is super fast and always available, to not only you, but all your friends
+            Leisele ligt op een knooppunt van fietsroutes. Fietsers kunnen bij ons genieten van lekker gebak vooraleer hun fietstocht verder te zetten.
             </p>
           </li>
 
@@ -204,7 +204,7 @@
             </div>
             <p class="featured-list-icon-text m-b-0"><strong>Duurzame horeca</strong></p>
             <p class="featured-list-icon-text">
-              Share with emoji anyone in the world. We've baked them directly into Mochi. These probably won't help with productivity though.
+             Gasthof 't Voshol draagt een steentje bij aan duurzaam en milieubewust leven. Sinds kort voorzien we zelfs in een stroompunt voor onze gasten met electrische fiets. 
             </p>
           </li>
         </ul>
