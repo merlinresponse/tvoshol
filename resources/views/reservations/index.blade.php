@@ -9,6 +9,22 @@
             
             {{ $reservation->voornaam }} 
             </br>
+            {{ $reservation->naam }} 
+            </br>   
+            {{ $reservation->aantal }} 
+            </br>
+            {{ $reservation->tel }} 
+            </br>
+            {{ $reservation->email }} 
+            </br>
+            {{ $reservation->opmerkingen }} 
+            </br>
+            {{ $reservation->bevestigd }} 
+            </br>
+            {{ $reservation->reservatiedatum }} 
+            </br>
+            {{ $reservation->reservatietijd }} 
+            </br>
             <form method="POST" action="/reservations/delete">
                 <input type="hidden" name="_method" value="delete" />
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
