@@ -298,17 +298,19 @@
     
     <form class="form-inline" method="POST" action="/reservations">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-      <input name="voornaam" class="form-control m-b" placeholder="Voornaam">
-      <input name="naam" class="form-control m-b" placeholder="Naam">
-        <input name="email" class="form-control m-b" placeholder="Email">
+        <input name="voornaam" class="form-control m-b" placeholder="Voornaam">
+        <input name="naam" class="form-control m-b" placeholder="Naam">
         </br>
-      <input name="reservatiedatum" class="form-control m-b" placeholder="Datum">
-      <input name="reservatietijd" class="form-control m-b" placeholder="Tijdstip">
-      <input name="aantal" class="form-control m-b" placeholder="Aantal personen">
-      </br>
-      <input name="opmerkingen" class="form-control m-b" placeholder="Opmerkingen">
-      </br>
-      <button class="btn btn-primary m-b">Reservatie versturen</button>
+        <input name="email" class="form-control m-b" placeholder="Email">
+        <input name="tel" class="form-control m-b" placeholder="Telefoon">
+        </br>
+        <input name="reservatiedatum" class="form-control m-b" placeholder="Datum">
+        <input name="reservatietijd" class="form-control m-b" placeholder="Tijdstip">
+        <input name="aantal" class="form-control m-b" placeholder="Aantal personen">
+        </br>
+        <input name="opmerkingen" class="form-control m-b" placeholder="Opmerkingen">
+        </br>
+        <button class="btn btn-primary m-b">Reservatie versturen</button>
     </form>
     <small class="text-muted">
       Opgepast, uw reservatie is pas definitief na bevestiging door Gasthof 't Voshol.

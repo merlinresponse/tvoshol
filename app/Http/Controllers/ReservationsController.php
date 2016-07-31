@@ -28,7 +28,15 @@ class ReservationsController extends Controller
             $reservation = new Reservation;
             
             $reservation->voornaam = $request->voornaam;
-            
+            $reservation->naam = $request->naam;
+            $reservation->aantal = $request->aantal;
+            $reservation->tel = $request->tel;
+            $reservation->email = $request->email;
+            $reservation->opmerkingen = $request->opmerkingen;
+            $reservation->reservatiedatum = $request->reservatiedatum;
+            $reservation->reservatietijd = $request->reservatietijd;
+                        
+                        
             $reservation->save();
             
             return redirect('/')
