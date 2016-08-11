@@ -16,7 +16,9 @@
         <hr>
         <div class="row">   
             <div class="col-md-12">
-                <h3>Alle boodschappen</h3>
+                <h3>Alle boodschappen</h3></br>
+                <h6>Enkel de eerste boodschap wordt getoond op de homepagina.</h6>
+                    
             </div>
         </div>
         
