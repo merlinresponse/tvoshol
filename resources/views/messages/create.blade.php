@@ -1,26 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Add a Reservation</h1>
+    <h1>Een boodschap toevoegen</h1>
         <div>
             
-           <form method="POST" action="/reservations">
+           <form method="POST" action="/photo">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
-                  <label for="voornaam">Voornaam</label>
-                  <input type="text" class="form-control" name="voornaam" placeholder="Voornaam">
+                  <label for="voornaam">Titel Nedelands</label>
+                  <input type="text" class="form-control" name="titelNL" placeholder="Titel Nederlands">
                 </div>
                 <div class="form-group">
-                  <label for="naam">Naam</label>
-                  <input type="text" class="form-control" name="naam" placeholder="Naam">
+                  <label for="naam">Titel Frans</label>
+                  <input type="text" class="form-control" name="titelFR" placeholder="Titel Frans">
                 </div>
                 <div class="form-group">
-                  <label for="aantal">Aantal personen</label>
-                  <input type="text" class="form-control" name="aantal" placeholder="Aantal personen">
+                  <label for="aantal">Tekst Nederlands</label>
+                  <input type="text" class="form-control" name="tekstNL" placeholder="Tekst Nederlands">
                 </div>                     
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" name="email" placeholder="Email">
+                  <label for="email">Tekst Frans</label>
+                  <input type="text" class="form-control" name="tekstFR" placeholder="Tekst Frans">
                 </div>
                 <button type="submit" class="btn btn-default">Versturen</button>
             </form>
