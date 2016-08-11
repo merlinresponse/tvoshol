@@ -33,7 +33,7 @@
                        </div>                     
                        <div class="form-group">
                          <label for="email">Tekst Frans</label>
-                         <input type="text" class="form-control" name="tekstFR" placeholder="Tekst Frans">
+                         <textarea class="form-control" name="tekstFR" placeholder="Tekst Frans"></textarea>
                        </div>
                         </br>
                        <button type="submit" class="btn btn-default">Versturen</button>

@@ -31,12 +31,12 @@
                             
                         <div class="form-group">
                             {{ Form::label('tekstNL', 'Tekst Nederlands') }}
-                            {{ Form::text('tekstNL', null, array('class' => 'form-control')) }}
+                            {{ Form::textarea('tekstNL', null, array('class' => 'form-control')) }}
                         </div>
                             
                         <div class="form-group">
                             {{ Form::label('tekstFR', 'Tekst Frans') }}
-                            {{ Form::text('tekstFR', null, array('class' => 'form-control')) }}
+                            {{ Form::textarea('tekstFR', null, array('class' => 'form-control')) }}
                         </div>
         
                     
