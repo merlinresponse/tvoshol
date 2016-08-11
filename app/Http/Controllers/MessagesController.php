@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Input;
 use App\Message;
 use Illuminate\Http\Request;
 
