@@ -14,6 +14,8 @@ class CreateHoursTable extends Migration
     {
         Schema::create('hours', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('urenNL');
+            $table->string('urenFR');
             $table->timestamps();
         });
     }

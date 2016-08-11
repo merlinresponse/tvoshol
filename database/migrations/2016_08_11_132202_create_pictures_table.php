@@ -14,6 +14,10 @@ class CreatePicturesTable extends Migration
     {
         Schema::create('pictures', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('beschrijvingNL');
+            $table->string('beschrijvingFR');
+            $table->string('bestand');
+            $table->boolean('tonen');
             $table->timestamps();
         });
     }
