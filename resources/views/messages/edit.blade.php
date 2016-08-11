@@ -43,6 +43,9 @@
                         {{ Form::submit('Wijziging opslaan', array('class' => 'btn btn-primary')) }}
                     
                     {{ Form::close() }}
+                    
+                     <a class="btn btn-small btn-info" href="{{ URL::to('message') }}">Annuleren</a>
+
                
                </div>
             </div>
