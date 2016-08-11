@@ -48,7 +48,13 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/reservations') }}">Reservaties</a></li>
-                    <li><a href="{{ url('/message') }}">Boodschap</a></li>
+                    <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Boodschap<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="message">Alle boodschappen</a></li>
+                              <li><a href="message/create">Nieuwe boodschap</a></li>
+                            </ul>
+                    </li>
                     <li><a href="{{ url('/picture') }}">Afbeeldingen</a></li>
                     <li><a href="{{ url('/home') }}">Kaart</a></li>
                     <li><a href="{{ url('/hour') }}">Openingsuren</a></li>    
