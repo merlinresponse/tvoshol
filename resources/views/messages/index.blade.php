@@ -30,6 +30,7 @@
                 <a class="btn btn-small btn-info" href="{{ URL::to('message/' . $message->id . '/edit') }}">Boodschap aanpassen</a>
 
                 </br>
+                </br>
             
                 {{ Form::open(['method' => 'DELETE', 'route' => ['message.destroy', $message->id]]) }}
                     {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}
