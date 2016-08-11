@@ -1,12 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3>Een boodschap toevoegen</h3>
        
         <div class="container">
+        
             <div class="row">
                <div class="col-md-12">
                   
+                  <h3>Een boodschap toevoegen</h3>
+               
+               </div>
+            </div>
+               
+            <div class="row">
+               <div class="col-md-12">
                   
                   <form method="POST" action="/photo">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -28,7 +35,6 @@
                        </div>
                        <button type="submit" class="btn btn-default">Versturen</button>
                    </form>
-               
                
                </div>
             </div>
