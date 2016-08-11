@@ -44,7 +44,6 @@
                     
                     {{ Form::close() }}
                     
-                     <a class="btn btn-small btn-info" href="{{ URL::to('message') }}">Annuleren</a>
 
                
                </div>
