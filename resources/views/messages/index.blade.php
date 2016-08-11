@@ -45,7 +45,7 @@
                 </br>
             
                 {{ Form::open(['method' => 'DELETE', 'route' => ['message.destroy', $message->id]]) }}
-                    {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}
+                    {{ Form::submit('Verwijderen', ['class' => 'btn btn-danger']) }}
                 {{ Form::close() }}
         
             </div>     
