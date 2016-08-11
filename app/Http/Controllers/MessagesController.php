@@ -74,7 +74,7 @@ class MessagesController extends Controller
         $message = Message::find($id);
 
         // show the edit form and pass the nerd
-        return View::make('messages.edit')
+        return view('messages.edit')
             ->with('message', $message);
     }
 
