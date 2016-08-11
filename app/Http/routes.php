@@ -23,6 +23,5 @@ Route::get('/reservations', 'ReservationsController@index');
 Route::get('/addreservation', 'ReservationsController@add');
 Route::post('/reservations', 'ReservationsController@store');
 Route::delete('/reservations/delete', 'ReservationsController@delete');
-Route::put('/reservations/confirm', 'ReservationsController@confirm');
 
 /*Route::get('/shops/{shop}', 'ShopController@show');*/

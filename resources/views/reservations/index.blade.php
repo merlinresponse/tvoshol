@@ -50,16 +50,6 @@
                     <input type="hidden" name="id" value="{{ $reservation->id }}">
                     <button type="submit" class="btn btn-default">Verwijderen</button>
                 </form>
-                    
-                </br>
-                </br>
-                    
-                <form method="PUT" action="/reservations/confirm">
-                    <input type="hidden" name="_method" value="confirm" />
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <input type="hidden" name="id" value="{{ $reservation->id }}">
-                    <button type="submit" class="btn btn-default">Bevestigd</button>
-                </form>
         
             </div>     
             
