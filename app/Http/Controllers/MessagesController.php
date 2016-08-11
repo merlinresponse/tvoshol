@@ -108,6 +108,10 @@ class MessagesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $message = Message::find($id);
+        $message->delete();
+
+        // redirect
+        return redirect('/message');
     }
 }
