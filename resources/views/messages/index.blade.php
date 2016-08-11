@@ -13,7 +13,7 @@
                 </ul>
             </div>
         </div>
-    
+        </hr>
         <div class="row">   
             <div class="col-md-12">
                 <h3>Alle boodschappen</h3>
