@@ -48,10 +48,10 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/reservations') }}">Reservaties</a></li>
-                    <li><a href="{{ url('/home') }}">Boodschap</a></li>
-                    <li><a href="{{ url('/home') }}">Afbeeldingen</a></li>
+                    <li><a href="{{ url('/message') }}">Boodschap</a></li>
+                    <li><a href="{{ url('/picture') }}">Afbeeldingen</a></li>
                     <li><a href="{{ url('/home') }}">Kaart</a></li>
-                    <li><a href="{{ url('/home') }}">Openingsuren</a></li>    
+                    <li><a href="{{ url('/hour') }}">Openingsuren</a></li>    
                         
                 </ul>
 
