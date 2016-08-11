@@ -38,7 +38,17 @@ class MessagesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = new Message;
+        
+        $message->titelNL = $request->titelNL;
+        $message->titelFR = $request->titelFR;
+        $message->tekstNL = $request->tekstNL;
+        $message->tekstFR = $request->tekstFR;
+        
+        $message->save();
+        
+        return redirect('/message')
+            ->with('success', true)->with('message','Boodschap opgeslagen.');
     }
 
     /**
