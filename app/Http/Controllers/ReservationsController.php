@@ -53,7 +53,7 @@ class ReservationsController extends Controller
     
     }
     
-            public function delete(Request $request){
+            public function confirm(Request $request){
         
             Reservation::find($request->id)->bevestigd = true;
             
