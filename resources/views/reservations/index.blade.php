@@ -14,28 +14,28 @@
         <div class="row">
             <div class="col-md-6">
         
-                Datum: {{ $reservation->reservatiedatum }} 
+                <b>Datum:</b> {{ $reservation->reservatiedatum }} 
                 </br>
-                Uur: {{ $reservation->reservatietijd }} 
+                <b>Uur:</b>  {{ $reservation->reservatietijd }} 
                 </br>   
-                Aantal personen: {{ $reservation->aantal }} 
+                <b>Aantal personen:</b>  {{ $reservation->aantal }} 
                 </br>
-                Opmerkingen: {{ $reservation->opmerkingen }} 
+                <b>Opmerkingen:</b>  {{ $reservation->opmerkingen }} 
                 </br>
-                Reeds bevestigd? {{ $reservation->bevestigd }} 
+                <b>Reeds bevestigd?</b>  {{ $reservation->bevestigd }} 
                 </br>
         
             </div>
                 
             <div class="col-md-6">
         
-                Voornaam: {{ $reservation->voornaam }} 
+                <b>Voornaam:</b>  {{ $reservation->voornaam }} 
                 </br>
-                Naam: {{ $reservation->naam }} 
+                <b>Naam:</b>  {{ $reservation->naam }} 
                 </br>   
-                Telefoonnummer: {{ $reservation->tel }} 
+                <b>Telefoonnummer:</b>  {{ $reservation->tel }} 
                 </br>
-                Email: {{ $reservation->email }} 
+                <b>Email:</b>  {{ $reservation->email }} 
                 </br>
             
                 <form method="POST" action="/reservations/delete">
