@@ -17,7 +17,7 @@
             <div class="row">
                <div class="col-md-12">
                   
-                  <form method="POST" action="/photo">
+                  <form method="POST" action="/message">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <div class="form-group">
                          <label for="voornaam">Titel Nedelands</label>
