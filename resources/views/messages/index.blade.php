@@ -25,6 +25,11 @@
                 <b>Tekst FR:</b>  {{ $message->tekstFR }} 
                 </br>
                 </br>
+                    
+                
+                <a class="btn btn-small btn-info" href="{{ URL::to('messages/' . $message->id . '/edit') }}">Boodschap aanpassen</a>
+
+                </br>
             
                 {{ Form::open(['method' => 'DELETE', 'route' => ['message.destroy', $message->id]]) }}
                     {{ Form::submit('Delete', ['class' => 'btn btn-danger']) }}

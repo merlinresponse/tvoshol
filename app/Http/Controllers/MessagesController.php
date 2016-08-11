@@ -70,7 +70,12 @@ class MessagesController extends Controller
      */
     public function edit($id)
     {
-        //
+                // get the nerd
+        $message = Message::find($id);
+
+        // show the edit form and pass the nerd
+        return View::make('messages.edit')
+            ->with('message', $message);
     }
 
     /**
@@ -82,7 +87,16 @@ class MessagesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $message = Message::find($id);
+        
+        $message->titelNL = Input::get('titelNL');
+        $message->titelFR = Input::get('titelFR');
+        $message->tekstNL = Input::get('tekstNL');
+        $message->tekstFR = Input::get('tekstFR');
+        
+        $message->save();
+        
+        return Redirect::to('messages');
     }
 
     /**
