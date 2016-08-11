@@ -51,8 +51,8 @@
                     <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Boodschap<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                              <li><a href="message">Alle boodschappen</a></li>
-                              <li><a href="message/create">Nieuwe boodschap</a></li>
+                              <li><a href="/message">Alle boodschappen</a></li>
+                              <li><a href="/message/create">Nieuwe boodschap</a></li>
                             </ul>
                     </li>
                     <li><a href="{{ url('/picture') }}">Afbeeldingen</a></li>
