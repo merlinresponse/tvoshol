@@ -3,9 +3,20 @@
 @section('content')
     <div class="container">
     
+
         <div class="row">   
             <div class="col-md-12">
-                <h3>Alle Reservaties</h3>
+                <ul class="nav nav-pills">
+
+                    <li role="presentation"><a href="message/create">een boodschap maken</a></li>
+
+                </ul>
+            </div>
+        </div>
+    
+        <div class="row">   
+            <div class="col-md-12">
+                <h3>Alle boodschappen</h3>
             </div>
         </div>
         
