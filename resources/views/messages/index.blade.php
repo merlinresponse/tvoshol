@@ -27,7 +27,7 @@
                 </br>
                     
                 
-                <a class="btn btn-small btn-info" href="{{ URL::to('messages/' . $message->id . '/edit') }}">Boodschap aanpassen</a>
+                <a class="btn btn-small btn-info" href="{{ URL::to('message/' . $message->id . '/edit') }}">Boodschap aanpassen</a>
 
                 </br>
             
