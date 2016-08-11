@@ -27,3 +27,5 @@ Route::delete('/reservations/delete', 'ReservationsController@delete');
 /*Route::get('/shops/{shop}', 'ShopController@show');*/
 
 Route::resource('message', 'MessagesController');
+Route::resource('picture', 'PicturesController');
+Route::resource('hour', 'HoursController');
