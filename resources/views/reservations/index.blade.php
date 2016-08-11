@@ -5,10 +5,12 @@
     
         <div class="row">   
             <div class="col-md-12">
-                <h1>All Reservations</h1>
+                <h3>Alle Reservaties</h3>
             </div>
         </div>
         
+        </br>
+            
         @foreach ($reservations as $reservation)
     
         <div class="row">
