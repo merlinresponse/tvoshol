@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Redirect;
 use App\Message;
 use Illuminate\Http\Request;
 
@@ -98,7 +97,7 @@ class MessagesController extends Controller
         
         $message->save();
         
-        return Redirect::to('messages');
+        return redirect('/message');
     }
 
     /**
