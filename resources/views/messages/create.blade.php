@@ -29,7 +29,7 @@
                        </div>
                        <div class="form-group">
                          <label for="aantal">Tekst Nederlands</label>
-                         <input type="text" class="form-control" name="tekstNL" placeholder="Tekst Nederlands">
+                         <textarea class="form-control" name="tekstNL" placeholder="Tekst Nederlands"></textarea>
                        </div>                     
                        <div class="form-group">
                          <label for="email">Tekst Frans</label>
