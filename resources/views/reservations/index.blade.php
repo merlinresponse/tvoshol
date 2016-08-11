@@ -54,7 +54,7 @@
                 </br>
                 </br>
                     
-                <form method="POST" action="/reservations/confirm">
+                <form method="PUT" action="/reservations/confirm">
                     <input type="hidden" name="_method" value="confirm" />
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="hidden" name="id" value="{{ $reservation->id }}">
