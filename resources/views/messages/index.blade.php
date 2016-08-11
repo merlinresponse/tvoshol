@@ -3,17 +3,6 @@
 @section('content')
     <div class="container">
     
-
-        <div class="row">   
-            <div class="col-md-12">
-                <ul class="nav nav-pills">
-
-                    <li role="presentation"><a href="message/create">een boodschap maken</a></li>
-
-                </ul>
-            </div>
-        </div>
-        <hr>
         <div class="row">   
             <div class="col-md-12">
                 <h3>Alle boodschappen</h3>
