@@ -14,7 +14,7 @@
         @foreach ($reservations as $reservation)
     
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-5">
         
                 <b>Datum:</b> {{ $reservation->reservatiedatum }} 
                 </br>
@@ -29,7 +29,7 @@
         
             </div>
                 
-            <div class="col-md-6">
+            <div class="col-md-5">
         
                 <b>Voornaam:</b>  {{ $reservation->voornaam }} 
                 </br>
@@ -47,7 +47,18 @@
                     <button type="submit" class="btn btn-default">Verwijderen</button>
                 </form>
         
-            </div>                
+            </div>
+            
+            <div class="col-md-2">
+            
+                <form method="POST" action="/reservations/delete">
+                    <input type="hidden" name="_method" value="delete" />
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <input type="hidden" name="id" value="{{ $reservation->id }}">
+                    <button type="submit" class="btn btn-default">Verwijderen</button>
+                </form>
+        
+            </div>     
             
         </div>
         </br>
