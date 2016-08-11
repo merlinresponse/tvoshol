@@ -7,7 +7,7 @@
             <div class="row">
                <div class="col-md-12">
                   
-                  <h3>Een boodschap toevoegen</h3>
+                  <h3>Een boodschap wijzigen</h3>
                
                </div>
             </div>
