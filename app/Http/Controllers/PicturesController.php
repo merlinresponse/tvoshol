@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use App\Picture;
 use Illuminate\Http\Request;
-use File;
 
 use App\Http\Requests;
 
@@ -132,7 +131,7 @@ class PicturesController extends Controller
         $picture = Picture::find($id);
         
         $filename = $picture->bestand;
-        \File::delete(public_path() . '/img/carousel', $filename);
+        unlink(public_path() . '/img/carousel', $filename);
         
         $picture->delete();
 
