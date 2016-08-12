@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use App\Picture;
 use Illuminate\Http\Request;
+use File;
 
 use App\Http\Requests;
 
