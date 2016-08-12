@@ -41,7 +41,7 @@ class PicturesController extends Controller
     public function store(Request $request)
     {
         
-          $validator = Validator::make($request->all(), [
+      /*   $validator = Validator::make($request->all(), [
             'beschrijvingNL' => 'required',
             'beschrijvingFR' => 'required',
             'bestand' => 'required',
@@ -54,7 +54,7 @@ class PicturesController extends Controller
                         ->withInput();
         }
         
-        
+        */
         
         $picture = new Picture;
         
