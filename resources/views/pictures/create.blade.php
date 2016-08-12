@@ -7,7 +7,7 @@
             <div class="row">
                <div class="col-md-12">
                   
-                  <h3>Een boodschap toevoegen</h3>
+                  <h3>Een afbeelding toevoegen</h3>
                
                </div>
             </div>
@@ -17,7 +17,7 @@
             <div class="row">
                <div class="col-md-12">
                   
-                  <form method="POST" action="/message" enctype="multipart/form-data">
+                  <form method="POST" action="/picture" enctype="multipart/form-data">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <div class="form-group">
                          <label for="beschrijvingNL">Beschrijving Nederlands</label>
