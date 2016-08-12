@@ -33,7 +33,7 @@
                        </div>                     
                        <div class="form-group">
                          <label for="tonen">Afbeelding weergeven?</label>
-                         <input type="checkbox" class="form-control" name="tonen" value="true">
+                         <input type="checkbox" class="form-control" name="tonen" value="1">
                        </div>
                         </br>
                        <button type="submit" class="btn btn-default">Versturen</button>
