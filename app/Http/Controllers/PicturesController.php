@@ -58,7 +58,7 @@ class PicturesController extends Controller
         
         $picture = new Picture;
         
-        $picture->bechrijvingNL = $request->beschrijvingNL;
+        $picture->beschrijvingNL = $request->beschrijvingNL;
         $picture->beschrijvingFR = $request->beschrijvingFR;
         $picture->bestand = $request->bestand;
         $picture->tonen = $request->tonen;
