@@ -45,7 +45,7 @@ class PicturesController extends Controller
             'beschrijvingNL' => 'required',
             'beschrijvingFR' => 'required',
             'bestand' => 'required',
-            'tonen' => 'required',
+        
         ]);
 
         if ($validator->fails()) {

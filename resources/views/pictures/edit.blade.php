@@ -36,7 +36,7 @@
                             
                         <div class="form-group">
                             {{ Form::label('tonen', 'Afbeelding weergeven?') }}
-                            {{ Form::checkbox('tonen', null, array('class' => 'form-control')) }}
+                            {{ Form::checkbox('tonen', true, array('class' => 'form-control')) }}
                         </div>
         
                     
