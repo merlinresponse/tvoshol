@@ -56,19 +56,17 @@ class PicturesController extends Controller
         
         $file = Input::file('bestand');
         $filename = $file->getClientOriginalName();
-        $extension = $file->getClientOriginalExtension();
-        $final_file = $filename . '.' . $extension;
         
         $picture = new Picture;
         
         $picture->beschrijvingNL = $request->beschrijvingNL;
         $picture->beschrijvingFR = $request->beschrijvingFR;
-        $picture->bestand = $final_file;
+        $picture->bestand = $filename;
         $picture->tonen = $request->tonen;
         
         $picture->save();
         
-        $file->move(public_path() . '/img/carousel', $final_file);
+        $file->move(public_path() . '/img/carousel', $filename);
         
         return redirect('/picture')
             ->with('success', true)->with('picture','Boodschap opgeslagen.');
