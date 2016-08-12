@@ -42,10 +42,10 @@ class PicturesController extends Controller
     {
         
           $validator = Validator::make($request->all(), [
-            'titleNL' => 'required',
-            'titleFR' => 'required',
-            'tekstNL' => 'required',
-            'tekstFR' => 'required',
+            'beschrijvingNL' => 'required',
+            'beschrijvingFR' => 'required',
+            'bestand' => 'required',
+            'tonen' => 'required',
         ]);
 
         if ($validator->fails()) {
