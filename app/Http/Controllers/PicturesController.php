@@ -54,7 +54,8 @@ class PicturesController extends Controller
                         ->withInput();
         }
         
-        
+        $file = Input::file('bestand');
+        $filename = $file->getClientOriginalName();
         
         $picture = new Picture;
         
@@ -64,6 +65,8 @@ class PicturesController extends Controller
         $picture->tonen = $request->tonen;
         
         $picture->save();
+        
+        $file->move('/img/carousel', $filename);
         
         return redirect('/picture')
             ->with('success', true)->with('picture','Boodschap opgeslagen.');

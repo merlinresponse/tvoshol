@@ -28,7 +28,7 @@
                 </br>
                     
                 
-                <a class="btn btn-small btn-info" href="{{ URL::to('picture/' . $picture->id . '/edit') }}">Boodschap aanpassen</a>
+                <a class="btn btn-small btn-info" href="{{ URL::to('picture/' . $picture->id . '/edit') }}">Afbeelding aanpassen</a>
 
                 </br>
                 </br>
