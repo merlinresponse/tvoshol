@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
+use App\Hour;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -15,7 +18,8 @@ class HoursController extends Controller
      */
     public function index()
     {
-        //
+        $hours = Hour::orderBy('created_at', 'desc')->get();
+        return view('hours.index', compact('hours'));
     }
 
     /**
@@ -25,7 +29,7 @@ class HoursController extends Controller
      */
     public function create()
     {
-        //
+        return view('hours.create');
     }
 
     /**
@@ -36,7 +40,29 @@ class HoursController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+          $validator = Validator::make($request->all(), [
+            'urenNL' => 'required',
+            'urenFR' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('hour/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+        
+        
+        
+        $hour = new Hour;
+        
+        $hour->urenNL = $request->urenNL;
+        $hour->urenFR = $request->urenFR;
+        
+        $hour->save();
+        
+        return redirect('/hour')
+            ->with('success', true)->with('hour','Boodschap opgeslagen.');
     }
 
     /**
@@ -58,7 +84,12 @@ class HoursController extends Controller
      */
     public function edit($id)
     {
-        //
+                // get the nerd
+        $hour = Hour::find($id);
+
+        // show the edit form and pass the nerd
+        return view('hours.edit')
+            ->with('hour', $hour);
     }
 
     /**
@@ -69,8 +100,15 @@ class HoursController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        //
+    {        
+        $hour = Hour::find($id);
+        
+        $hour->urenNL = Input::get('urenNL');
+        $hour->urenFR = Input::get('urenFR');
+        
+        $hour->save();
+        
+        return redirect('/hour');
     }
 
     /**
@@ -81,6 +119,10 @@ class HoursController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $hour = Hour::find($id);
+        $hour->delete();
+
+        // redirect
+        return redirect('/hour');
     }
 }
