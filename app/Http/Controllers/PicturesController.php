@@ -131,7 +131,7 @@ class PicturesController extends Controller
         $picture = Picture::find($id);
         
         $filename = $picture->bestand;
-        unlink(public_path() . '/img/carousel', $filename);
+        unlink(public_path() . '/img/carousel/' . $filename);
         
         $picture->delete();
 
