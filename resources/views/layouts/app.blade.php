@@ -69,7 +69,6 @@
                               <li><a href="/picture/create">Nieuwe afbeelding</a></li>
                             </ul>
                     </li>                        
-                    <li><a href="{{ url('/picture') }}">Afbeeldingen</a></li>
                     <li><a href="{{ url('/home') }}">Kaart</a></li>    
                         
                 </ul>
