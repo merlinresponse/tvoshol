@@ -129,6 +129,10 @@ class PicturesController extends Controller
     public function destroy($id)
     {
         $picture = Picture::find($id);
+        
+        $filename = $picture->bestand;
+        $file->delete(public_path() . '/img/carousel', $filename);
+        
         $picture->delete();
 
         // redirect
