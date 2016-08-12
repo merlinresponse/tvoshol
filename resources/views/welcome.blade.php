@@ -83,14 +83,20 @@
   </div>
 </nav>
     
-    
-    @if(Session::has('success'))
-    <div class="alert alert-success">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <strong>Perfect!</strong> {{ Session::get('message', '') }}
+<div class="container">
+    <div class ="row">
+        <div class="col-md-12">
+
+            @if(Session::has('success'))
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>Perfect!</strong> {{ Session::get('message', '') }}
+            </div>
+            @endif
+            
+        </div>
     </div>
-    @endif
-        
+</div>
 
 <div class="block">
   <div class="container text-center app-translate-15" data-transition="entrance">

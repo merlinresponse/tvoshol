@@ -39,6 +39,22 @@ class MessagesController extends Controller
      */
     public function store(Request $request)
     {
+        
+          $validator = Validator::make($request->all(), [
+            'titleNL' => 'required',
+            'titleFR' => 'required',
+            'tekstNL' => 'required',
+            'tekstFR' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('message/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+        
+        
+        
         $message = new Message;
         
         $message->titelNL = $request->titelNL;
