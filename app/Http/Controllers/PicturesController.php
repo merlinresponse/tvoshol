@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
+use App\Picture;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -15,7 +18,8 @@ class PicturesController extends Controller
      */
     public function index()
     {
-        //
+        $pictures = Picture::orderBy('created_at', 'desc')->get();
+        return view('pictures.index', compact('pictures'));
     }
 
     /**
@@ -25,7 +29,7 @@ class PicturesController extends Controller
      */
     public function create()
     {
-        //
+        return view('pictures.create');
     }
 
     /**
@@ -36,7 +40,33 @@ class PicturesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+          $validator = Validator::make($request->all(), [
+            'titleNL' => 'required',
+            'titleFR' => 'required',
+            'tekstNL' => 'required',
+            'tekstFR' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect('picture/create')
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+        
+        
+        
+        $picture = new Picture;
+        
+        $picture->bechrijvingNL = $request->beschrijvingNL;
+        $picture->beschrijvingFR = $request->beschrijvingFR;
+        $picture->bestand = $request->bestand;
+        $picture->tonen = $request->tonen;
+        
+        $picture->save();
+        
+        return redirect('/picture')
+            ->with('success', true)->with('picture','Boodschap opgeslagen.');
     }
 
     /**
@@ -58,7 +88,12 @@ class PicturesController extends Controller
      */
     public function edit($id)
     {
-        //
+                // get the nerd
+        $picture = Picture::find($id);
+
+        // show the edit form and pass the nerd
+        return view('pictures.edit')
+            ->with('picture', $picture);
     }
 
     /**
@@ -69,8 +104,17 @@ class PicturesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        //
+    {        
+        $picture = Picture::find($id);
+        
+        $picture->beschrijvingNL = Input::get('beschrijvingNL');
+        $picture->beschrijvingFR = Input::get('beschrijvingFR');
+        $picture->bestand = Input::get('bestand');
+        $picture->tonen = Input::get('tonen');
+        
+        $picture->save();
+        
+        return redirect('/picture');
     }
 
     /**
@@ -81,6 +125,10 @@ class PicturesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $picture = Picture::find($id);
+        $picture->delete();
+
+        // redirect
+        return redirect('/picture');
     }
 }

@@ -62,6 +62,13 @@
                               <li><a href="/hour/create">Nieuw openingsuur</a></li>
                             </ul>
                     </li>
+                    <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Afbeeldingen<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="/picture">Alle afbeeldingen</a></li>
+                              <li><a href="/picture/create">Nieuwe afbeelding</a></li>
+                            </ul>
+                    </li>                        
                     <li><a href="{{ url('/picture') }}">Afbeeldingen</a></li>
                     <li><a href="{{ url('/home') }}">Kaart</a></li>    
                         

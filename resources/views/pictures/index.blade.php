@@ -5,51 +5,37 @@
     
         <div class="row">   
             <div class="col-md-12">
-                <h3>Alle Reservaties</h3>
+                <h3>Alle afbeeldingen</h3>
+                    
             </div>
         </div>
         
         </br>
             
-        @foreach ($reservations as $reservation)
+        @foreach ($pictures as $picture)
     
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-12">
         
-                <b>Datum:</b> {{ $reservation->reservatiedatum }} 
+                <b>Beschrijving NL:</b> {{ $picture->beschrijvingNL }} 
                 </br>
-                <b>Uur:</b>  {{ $reservation->reservatietijd }} 
+                <b>Beschrijving FR</b>  {{ $picture->beschrijvingFR }} 
                 </br>   
-                <b>Aantal personen:</b>  {{ $reservation->aantal }} 
+                <b>Bestandsnaam:</b>  {{ $picture->bestand }} 
                 </br>
-                <b>Opmerkingen:</b>  {{ $reservation->opmerkingen }} 
+                <b>Weergeven?:</b>  {{ $picture->tonen }} 
                 </br>
-                <b>Reeds bevestigd?</b>  {{ $reservation->bevestigd }} 
                 </br>
-        
-            </div>
+                    
                 
-            <div class="col-md-5">
-        
-                <b>Voornaam:</b>  {{ $reservation->voornaam }} 
-                </br>
-                <b>Naam:</b>  {{ $reservation->naam }} 
-                </br>   
-                <b>Telefoonnummer:</b>  {{ $reservation->tel }} 
-                </br>
-                <b>Email:</b>  {{ $reservation->email }} 
-                </br>
+                <a class="btn btn-small btn-info" href="{{ URL::to('picture/' . $picture->id . '/edit') }}">Boodschap aanpassen</a>
 
-            </div>
+                </br>
+                </br>
             
-            <div class="col-md-2">
-            
-                <form method="POST" action="/reservations/delete">
-                    <input type="hidden" name="_method" value="delete" />
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <input type="hidden" name="id" value="{{ $reservation->id }}">
-                    <button type="submit" class="btn btn-default">Verwijderen</button>
-                </form>
+                {{ Form::open(['method' => 'DELETE', 'route' => ['picture.destroy', $picture->id]]) }}
+                    {{ Form::submit('Verwijderen', ['class' => 'btn btn-danger']) }}
+                {{ Form::close() }}
         
             </div>     
             

@@ -20,11 +20,11 @@
                   <form method="POST" action="/hour">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <div class="form-group">
-                         <label for="aantal">Openingsuren Nederlands</label>
+                         <label for="urenNL">Openingsuren Nederlands</label>
                          <textarea class="form-control" name="urenNL" placeholder="Openingsuren Nederlands"></textarea>
                        </div>                     
                        <div class="form-group">
-                         <label for="email">Openingsuren Frans</label>
+                         <label for="urenFR">Openingsuren Frans</label>
                          <textarea class="form-control" name="urenFR" placeholder="Openingsuren Frans"></textarea>
                        </div>
                         </br>
