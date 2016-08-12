@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
 use App\Message;
 use Illuminate\Http\Request;
 
