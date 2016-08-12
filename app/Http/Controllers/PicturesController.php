@@ -66,7 +66,7 @@ class PicturesController extends Controller
         
         $picture->save();
         
-        $file->move('/img/carousel', $filename);
+        $file->move(public_path() . '/img/carousel');
         
         return redirect('/picture')
             ->with('success', true)->with('picture','Boodschap opgeslagen.');
