@@ -23,7 +23,7 @@
                 </br>   
                 <b>Bestandsnaam:</b>  {{ $picture->bestand }} 
                 </br>
-                <b>Weergeven?</b>  {{ if ($picture->tonen) { return "ja" } else { return "nee" } }} 
+                <b>Weergeven?</b>  {{ $picture->tonen }} 
                 </br>
                 </br>
                     
