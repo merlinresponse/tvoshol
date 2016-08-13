@@ -12,7 +12,7 @@ class CreateCardsTable extends Migration
      */
     public function up()
     {
-        Schema::table('cards', function (Blueprint $table) {
+        Schema::create('cards', function (Blueprint $table) {
             $table->increments('id');
             $table->string('menuhaartNL');
             $table->string('menukaartFR');
