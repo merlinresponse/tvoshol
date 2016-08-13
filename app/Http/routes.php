@@ -29,3 +29,4 @@ Route::delete('/reservations/delete', 'ReservationsController@delete');
 Route::resource('message', 'MessagesController');
 Route::resource('picture', 'PicturesController');
 Route::resource('hour', 'HoursController');
+Route::resource('card', 'CardsController');

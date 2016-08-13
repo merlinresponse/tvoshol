@@ -20,19 +20,19 @@
                   <form method="POST" action="/message">
                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                        <div class="form-group">
-                         <label for="voornaam">Titel Nedelands</label>
+                         <label for="titelNL">Titel Nedelands</label>
                          <input type="text" class="form-control" name="titelNL" placeholder="Titel Nederlands">
                        </div>
                        <div class="form-group">
-                         <label for="naam">Titel Frans</label>
+                         <label for="titelFR">Titel Frans</label>
                          <input type="text" class="form-control" name="titelFR" placeholder="Titel Frans">
                        </div>
                        <div class="form-group">
-                         <label for="aantal">Tekst Nederlands</label>
+                         <label for="tekstNL">Tekst Nederlands</label>
                          <textarea class="form-control" name="tekstNL" placeholder="Tekst Nederlands"></textarea>
                        </div>                     
                        <div class="form-group">
-                         <label for="email">Tekst Frans</label>
+                         <label for="tekstFR">Tekst Frans</label>
                          <textarea class="form-control" name="tekstFR" placeholder="Tekst Frans"></textarea>
                        </div>
                         </br>

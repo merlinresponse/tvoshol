@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
-use App\Message;
+use App\Card;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class MessagesController extends Controller
+class CardsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +18,8 @@ class MessagesController extends Controller
      */
     public function index()
     {
-        $messages = Message::orderBy('created_at', 'desc')->get();
-        return view('messages.index', compact('messages'));
+        $cards = Card::orderBy('created_at', 'desc')->get();
+        return view('cards.index', compact('cards'));
     }
 
     /**
@@ -29,7 +29,7 @@ class MessagesController extends Controller
      */
     public function create()
     {
-        return view('messages.create');
+        return view('cards.create');
     }
 
     /**
@@ -42,31 +42,34 @@ class MessagesController extends Controller
     {
         
           $validator = Validator::make($request->all(), [
-            'titelNL' => 'required',
-            'titelFR' => 'required',
-            'tekstNL' => 'required',
-            'tekstFR' => 'required',
+            'menukaartNL' => 'required',
+            'menukaartFR' => 'required',
         ]);
 
         if ($validator->fails()) {
-            return redirect('message/create')
+            return redirect('card/create')
                         ->withErrors($validator)
                         ->withInput();
         }
         
+        $fileNL = Input::file('menukaartNL');
+        $filenameNL = $fileNL->getClientOriginalName();
         
+        $fileFR = Input::file('menukaartFR');
+        $filenameFR = $fileFR->getClientOriginalName();
         
-        $message = new Message;
+        $card = new Card;
         
-        $message->titelNL = $request->titelNL;
-        $message->titelFR = $request->titelFR;
-        $message->tekstNL = $request->tekstNL;
-        $message->tekstFR = $request->tekstFR;
+        $card->menukaartNL = $filenameNL;
+        $card->menukaartFR = $filenameFR;
         
-        $message->save();
+        $card->save();
         
-        return redirect('/message')
-            ->with('success', true)->with('message','Boodschap opgeslagen.');
+        $fileNL->move(public_path() . '/img/cards', $filenameNL);
+        $fileFR->move(public_path() . '/img/cards', $filenameFR);
+        
+        return redirect('/card')
+            ->with('success', true)->with('card','Menukaart opgeslagen.');
     }
 
     /**
@@ -89,11 +92,11 @@ class MessagesController extends Controller
     public function edit($id)
     {
                 // get the nerd
-        $message = Message::find($id);
+        $card = Card::find($id);
 
         // show the edit form and pass the nerd
-        return view('messages.edit')
-            ->with('message', $message);
+        return view('cards.edit')
+            ->with('card', $card);
     }
 
     /**
@@ -105,16 +108,14 @@ class MessagesController extends Controller
      */
     public function update(Request $request, $id)
     {        
-        $message = Message::find($id);
+        $card = Card::find($id);
         
-        $message->titelNL = Input::get('titelNL');
-        $message->titelFR = Input::get('titelFR');
-        $message->tekstNL = Input::get('tekstNL');
-        $message->tekstFR = Input::get('tekstFR');
+        $card->menukaartNL = Input::get('menukaartNL');
+        $card->menukaartFR = Input::get('menukaartFR');
         
-        $message->save();
+        $card->save();
         
-        return redirect('/message');
+        return redirect('/card');
     }
 
     /**
@@ -125,10 +126,25 @@ class MessagesController extends Controller
      */
     public function destroy($id)
     {
-        $message = Message::find($id);
-        $message->delete();
+        $card = Card::find($id);
+        
+        $filenameNL = $picture->menukaartNL;
+        $fileNL = public_path() . '/img/cards/' . $filenameNL;
+        
+        if (file_exists($fileNL) && !is_dir($fileNL)) {
+                unlink($fileNL);
+        }
+
+        $filenameFR = $picture->menukaartFR;
+        $fileFR = public_path() . '/img/cards/' . $filenameFR;
+        
+        if (file_exists($fileFR) && !is_dir($fileFR)) {
+                unlink($fileFR);
+        }        
+        
+        $card->delete();
 
         // redirect
-        return redirect('/message');
+        return redirect('/card');
     }
 }
