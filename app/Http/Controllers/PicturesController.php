@@ -133,7 +133,7 @@ class PicturesController extends Controller
         $filename = $picture->bestand;
         $file = public_path() . '/img/carousel/' . $filename;
         
-        if (file_exists($file)) {
+        if (file_exists($file) && !is_dir($file)) {
                 unlink($file);
         }
         
