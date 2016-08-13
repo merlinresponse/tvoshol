@@ -23,10 +23,15 @@
                 </br>   
                 <b>Bestandsnaam:</b>  {{ $picture->bestand }} 
                 </br>
-                <b>Weergeven?</b>  {{ $picture->tonen }} 
+                @if ( $picture->tonen == 1)
+                <b>Weergeven?</b> Ja
                 </br>
                 </br>
-                    
+                @else
+                <b>Weergeven?</b> Nee
+                </br>
+                </br>                
+                @endif
                 
                 <a class="btn btn-small btn-info" href="{{ URL::to('picture/' . $picture->id . '/edit') }}">Afbeelding aanpassen</a>
 
