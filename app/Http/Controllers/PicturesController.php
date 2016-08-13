@@ -59,12 +59,10 @@ class PicturesController extends Controller
         
         $picture = new Picture;
         
-        $picture->tonen = 0;
-        
         $picture->beschrijvingNL = $request->beschrijvingNL;
         $picture->beschrijvingFR = $request->beschrijvingFR;
         $picture->bestand = $filename;
-        $picture->tonen = $request->tonen;
+        $picture->tonen = $request->input('tonen', false);
         
         $picture->save();
         
