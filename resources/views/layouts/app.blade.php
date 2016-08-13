@@ -72,8 +72,8 @@
                     <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menukaarten<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                              <li><a href="/picture">Alle kaarten</a></li>
-                              <li><a href="/picture/create">Nieuwe kaart</a></li>
+                              <li><a href="/card">Alle kaarten</a></li>
+                              <li><a href="/card/create">Nieuwe kaart</a></li>
                             </ul>
                     </li>                       
                         
