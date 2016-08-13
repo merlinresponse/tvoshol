@@ -128,14 +128,14 @@ class CardsController extends Controller
     {
         $card = Card::find($id);
         
-        $filenameNL = $picture->menukaartNL;
+        $filenameNL = $card->menukaartNL;
         $fileNL = public_path() . '/img/cards/' . $filenameNL;
         
         if (file_exists($fileNL) && !is_dir($fileNL)) {
                 unlink($fileNL);
         }
 
-        $filenameFR = $picture->menukaartFR;
+        $filenameFR = $card->menukaartFR;
         $fileFR = public_path() . '/img/cards/' . $filenameFR;
         
         if (file_exists($fileFR) && !is_dir($fileFR)) {
