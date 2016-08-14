@@ -160,7 +160,7 @@
 </div>
 
 
-
+@if(isset($messages))
     @foreach ($messages as $message)
     
     <div class="block block-bordered-lg">
@@ -175,7 +175,7 @@
     </div>
     
     @endforeach
-
+@endif
 
 
 <div class="block block-bordered-lg">
