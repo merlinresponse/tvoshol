@@ -159,6 +159,8 @@
   </div>
 </div>
 
+@foreach ($messages as $message)
+
 <div class="block block-bordered-lg">
   <div class="container text-center app-translate-15" data-transition="entrance">
     <blockquote class="pull-quote">
@@ -169,6 +171,8 @@
     </blockquote>
   </div>
 </div>
+
+@endforeach
 
 <div class="block block-bordered-lg">
   <div class="container">
