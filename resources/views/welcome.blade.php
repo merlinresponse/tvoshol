@@ -347,11 +347,11 @@
   <div class="container">
     <div class="row">
        <div class="col-sm-6">
-        <h6 class="text-uppercase">About</h6>
+        <h3 class="text-uppercase">Adres & Contactgegevens</h3>
         <p>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</p>
       </div>
        <div class="col-sm-6">
-        <h6 class="text-uppercase">About</h6>
+        <h3 class="text-uppercase">Sociale Media</h3>
         <p>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</p>
       </div>
     </div>
