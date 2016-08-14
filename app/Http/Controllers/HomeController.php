@@ -38,6 +38,6 @@ class HomeController extends Controller
         
         $message = Message::orderBy('created_at', 'desc')->get();
                 
-        return view('welcome', ['message' => $message]);
+        return view('welcome', compact('message'));
     }
 }
