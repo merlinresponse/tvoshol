@@ -347,11 +347,11 @@
   <div class="container">
     <div class="row">
        <div class="col-sm-6">
-        <h3 class="text-uppercase">Adres & Contactgegevens</h3>
-        <h6>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</h6>
+        <h3 class="text-uppercase"></h3>Contactgegevens & Sociale Media</h3>
+        <h6>Gasthof 't Voshol</br>Leiseledorp 20</br>8691 Leisele</br>T: +32 (0)58 29 81 57</br>info@tvoshol.be</h6>
       </div>
        <div class="col-sm-6">
-        <h3 class="text-uppercase">Sociale Media</h3>
+        <h3 class="text-uppercase">Openingsuren</h3>
         <h6>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</h6>
       </div>
     </div>
