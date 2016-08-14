@@ -159,20 +159,24 @@
   </div>
 </div>
 
-@foreach ($messages as $message)
 
-<div class="block block-bordered-lg">
-  <div class="container text-center app-translate-15" data-transition="entrance">
-    <blockquote class="pull-quote">
-        <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>      
-      <p>
-        {{ $message->tekstNL }}
-      </p>
-    </blockquote>
-  </div>
-</div>
+@if (count($messages > 0))
+    @foreach ($messages as $message)
+    
+    <div class="block block-bordered-lg">
+      <div class="container text-center app-translate-15" data-transition="entrance">
+        <blockquote class="pull-quote">
+            <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>      
+          <p>
+            {{ $message->tekstNL }}
+          </p>
+        </blockquote>
+      </div>
+    </div>
+    
+    @endforeach
+@endif
 
-@endforeach
 
 <div class="block block-bordered-lg">
   <div class="container">
