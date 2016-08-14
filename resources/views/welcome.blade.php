@@ -348,11 +348,11 @@
     <div class="row">
        <div class="col-sm-6">
         <h3 class="text-uppercase">Adres & Contactgegevens</h3>
-        <p>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</p>
+        <h6>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</h6>
       </div>
        <div class="col-sm-6">
         <h3 class="text-uppercase">Sociale Media</h3>
-        <p>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</p>
+        <h6>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</h6>
       </div>
     </div>
   </div>
