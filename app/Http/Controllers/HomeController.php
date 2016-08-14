@@ -36,13 +36,8 @@ class HomeController extends Controller
     public function index()
     {
         
-        $message = Message::orderBy('created_at', 'desc')->take(1)->get();
-        $message_titel = $message->titelNL;
-        $message_tekst = $message->tekstFR;
-        
-    
-        
-        
-        return view('welcome', ['message_titel' => $message_titel, 'message_tekst' => $message_tekst]);
+        $message = Message::orderBy('created_at', 'desc')->get();
+                
+        return view('welcome', ['message' => $message]);
     }
 }
