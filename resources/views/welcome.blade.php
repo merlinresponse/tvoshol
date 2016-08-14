@@ -159,6 +159,17 @@
   </div>
 </div>
 
+<div class="block">
+  <div class="container text-center app-translate-15" data-transition="entrance">
+    <blockquote class="pull-quote">
+        <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">Titel nieuwsbericht</h2>      
+      <p>
+        Test nieuwsbericht.
+      </p>
+    </blockquote>
+  </div>
+</div>
+
 <div class="block block-bordered-lg">
   <div class="container">
     <div class="row">
