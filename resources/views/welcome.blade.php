@@ -9,18 +9,19 @@
     <meta name="author" content="">
 
     <title>
-      
-        Minimal &middot; 
-      
+
+        Minimal &middot;
+
     </title>
 
-    
+
       <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
       <link href="css/toolkit-minimal.css" rel="stylesheet">
       <link href="css/application-minimal.css" rel="stylesheet">
-    
+      <link href="/slim/slim.min.css" rel="stylesheet">
 
-    
+
+
 
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
@@ -44,7 +45,7 @@
 
 
 <body>
-  
+
 
 
 
@@ -74,7 +75,7 @@
         </li>
         <li >
           <a href="#gin">gin</a>
-        </li>            
+        </li>
         <li >
           <a href="#contact">contact</a>
         </li>
@@ -82,7 +83,7 @@
     </div><!--/.nav-collapse -->
   </div>
 </nav>
-    
+
 <div class="container">
     <div class ="row">
         <div class="col-md-12">
@@ -93,7 +94,7 @@
             <strong>Perfect!</strong> {{ Session::get('message', '') }}
             </div>
             @endif
-            
+
         </div>
     </div>
 </div>
@@ -102,7 +103,7 @@
   <div class="container text-center app-translate-15" data-transition="entrance">
     <img src="img/logo_tvoshol.gif">
     <blockquote class="pull-quote">
-        <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">Restaurant & Tearoom</h2>      
+        <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">Restaurant & Tearoom</h2>
       <p>
         Leisele, gelegen "Bachten de Kupe", aan de grens van ons Belgisch grondgebied, verdoken in de verre Westhoek, een mooie landelijke gemeente, met beschermd dorpsgezicht op zowat 12km van Veurne, 15km van de Kust, 25km van Ieper en 4km van het franse Hondschoote. Filmdorp tijdens de opnames van VRT-feuilleton "De Bossen van Vlaanderen". Op het dorpsplein rechtover de Kerk en de kiosk.
       </p>
@@ -119,7 +120,7 @@
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
-      </div> 
+      </div>
       <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
           Gasthof 't Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. U kan deze via onderstaande link meteen raadplegen.
@@ -129,7 +130,7 @@
             <button class="btn btn-primary m-b">Menukaart raadplegen</button>
           </div>
         </div>
-      </div>       
+      </div>
     </div>
   </div>
 </div>
@@ -154,7 +155,7 @@
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
-      </div>        
+      </div>
     </div>
   </div>
 </div>
@@ -162,18 +163,18 @@
 
 @if(isset($messages))
     @foreach ($messages as $message)
-    
+
     <div class="block block-bordered-lg">
       <div class="container text-center app-translate-15" data-transition="entrance">
         <blockquote class="pull-quote">
-            <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>      
+            <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>
           <p>
             {{ $message->tekstNL }}
           </p>
         </blockquote>
       </div>
     </div>
-    
+
     @endforeach
 @endif
 
@@ -229,7 +230,7 @@
             </div>
             <p class="featured-list-icon-text m-b-0"><strong>Duurzame horeca</strong></p>
             <p class="featured-list-icon-text">
-             Gasthof 't Voshol draagt een steentje bij aan duurzaam en milieubewust leven. Sinds kort voorzien we zelfs in een stroompunt voor onze gasten met electrische fiets. 
+             Gasthof 't Voshol draagt een steentje bij aan duurzaam en milieubewust leven. Sinds kort voorzien we zelfs in een stroompunt voor onze gasten met electrische fiets.
             </p>
           </li>
         </ul>
@@ -310,7 +311,7 @@
       </div>
       <div class="col-sm-7">
         <img src="img/waardebon_crop.png" class="app-translate-5" data-transition="entrance">
-        </div>    
+        </div>
     </div>
   </div>
 </div>
@@ -320,7 +321,7 @@
     <p class="lead m-b-md">
       Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
-    
+
     <form class="form-inline" method="POST" action="/reservations">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <input name="voornaam" class="form-control m-b" placeholder="Voornaam">
@@ -362,6 +363,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/toolkit.js"></script>
     <script src="js/application.js"></script>
+    <script src="/slim/slim.kickstart.min.js"></script>
   </body>
 </html>
-
