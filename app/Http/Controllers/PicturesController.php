@@ -40,12 +40,12 @@ class PicturesController extends Controller
      */
     public function store(Request $request)
     {
-        
+
        $validator = Validator::make($request->all(), [
             'beschrijvingNL' => 'required',
             'beschrijvingFR' => 'required',
             'bestand' => 'required',
-        
+
         ]);
 
         if ($validator->fails()) {
@@ -53,21 +53,25 @@ class PicturesController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-        
-        $file = Input::file('bestand');
-        $filename = $file->getClientOriginalName();
-        
+
+        $image = Slim::getImages();
+        $name = $image['output']['name'];
+        $data = $image['output']['data'];
+        $file = Slim::saveFile($data, $name, '/img/carousel');
+        //$file = Input::file('bestand');
+        //$filename = $file->getClientOriginalName();
+
         $picture = new Picture;
-        
+
         $picture->beschrijvingNL = $request->beschrijvingNL;
         $picture->beschrijvingFR = $request->beschrijvingFR;
-        $picture->bestand = $filename;
-        $picture->tonen = $request->input('tonen', false);
-        
+        $picture->bestand = $file['name'];
+        $picture->tonen = $request->input('tonen', 0);
+
         $picture->save();
-        
-        $file->move(public_path() . '/img/carousel', $filename);
-        
+
+      //  $file->move(public_path() . '/img/carousel', $filename);
+
         return redirect('/picture')
             ->with('success', true)->with('picture','Boodschap opgeslagen.');
     }
@@ -107,16 +111,16 @@ class PicturesController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {        
+    {
         $picture = Picture::find($id);
-        
+
         $picture->beschrijvingNL = Input::get('beschrijvingNL');
         $picture->beschrijvingFR = Input::get('beschrijvingFR');
         $picture->bestand = Input::get('bestand');
         $picture->tonen = Input::get('tonen');
-        
+
         $picture->save();
-        
+
         return redirect('/picture');
     }
 
@@ -129,15 +133,15 @@ class PicturesController extends Controller
     public function destroy($id)
     {
         $picture = Picture::find($id);
-        
+
         $filename = $picture->bestand;
         $file = public_path() . '/img/carousel/' . $filename;
-        
+
         if (file_exists($file) && !is_dir($file)) {
                 unlink($file);
         }
-        
-        
+
+
         $picture->delete();
 
         // redirect

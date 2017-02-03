@@ -22,11 +22,12 @@
 
 
                        <div class="form-group">
-                           <label for="avatar">Beeld</label>
+                           <label for="bestand">Beeld</label>
                            <input type="file"
                                   class="slim"
                                   data-ratio="16:9"
-                                  id="avatar">
+                                  data-size="900,900"
+                                  id="bestand">
                        </div>
 
 
