@@ -15,6 +15,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
+    <link href="/slim/slim.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Lato';
@@ -68,15 +70,15 @@
                               <li><a href="/picture">Alle afbeeldingen</a></li>
                               <li><a href="/picture/create">Nieuwe afbeelding</a></li>
                             </ul>
-                    </li>                        
+                    </li>
                     <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menukaarten<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                               <li><a href="/card">Alle kaarten</a></li>
                               <li><a href="/card/create">Nieuwe kaart</a></li>
                             </ul>
-                    </li>                       
-                        
+                    </li>
+
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -100,11 +102,11 @@
             </div>
         </div>
     </nav>
-        
+
     <div class="container">
         <div class ="row">
             <div class="col-md-12">
-    
+
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button
@@ -115,7 +117,7 @@
                         </ul>
                     </div>
                 @endif
-                
+
             </div>
         </div>
     </div>
@@ -125,6 +127,7 @@
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/slim/slim.kickstart.min.js"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>
