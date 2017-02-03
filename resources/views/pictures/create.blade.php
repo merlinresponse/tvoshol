@@ -25,7 +25,7 @@
                            <label for="avatar">Beeld</label>
                            <input type="file"
                                   class="form-control slim"
-                                  data-ratio="16:9"
+                                  data-ratio="900,400"
                                   id="avatar">
                        </div>
 
