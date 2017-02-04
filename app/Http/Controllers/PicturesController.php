@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+require_once("/home/forge/tvoshol.responsestudios.com/public/slim/slim.php");
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
