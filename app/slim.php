@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 abstract class SlimStatus {
     const FAILURE = 'failure';
     const SUCCESS = 'success';
