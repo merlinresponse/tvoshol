@@ -22,12 +22,12 @@
 
 
                        <div class="form-group">
-                           <label for="bestand">Beeld</label>
+                          
                            <input type="file"
                                   class="slim"
                                   data-ratio="16:9"
                                   data-size="900,900"
-                                  id="bestand">
+                                  name="slim[]">
                        </div>
 
 

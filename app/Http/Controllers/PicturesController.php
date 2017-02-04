@@ -55,7 +55,8 @@ class PicturesController extends Controller
                         ->withInput();
         }
 
-        $image = Slim::getImages();
+        $images = Slim::getImages();
+        $image = $images[0];
         $name = $image['output']['name'];
         $data = $image['output']['data'];
         $file = Slim::saveFile($data, $name, '/img/carousel');
