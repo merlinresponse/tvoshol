@@ -22,11 +22,8 @@
         ],
         "psr-4": {
             "App\\": "app/"
-        },
-        "files": [
-            "/home/forge/tvoshol.responsestudios.com/public/slim/slim.php",
-            "/home/forge/tvoshol.responsestudios.com/public/slim/sync.php"
-        ]
+        }
+
     },
     "autoload-dev": {
         "classmap": [

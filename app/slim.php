@@ -1,7 +1,5 @@
 <?php
 
-namespace App;
-
 abstract class SlimStatus {
     const FAILURE = 'failure';
     const SUCCESS = 'success';
@@ -120,7 +118,7 @@ class Slim {
         if (substr($path, -1) !== '/') {
             $path .= '/';
         }
-
+        
         // Test if directory already exists
         if(!is_dir($path)){
             mkdir($path, 0755, true);

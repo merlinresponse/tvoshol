@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-require_once("/home/forge/tvoshol.responsestudios.com/public/slim/slim.php");
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use App\Picture;
+use App\Slim;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
