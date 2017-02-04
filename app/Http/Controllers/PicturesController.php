@@ -1,5 +1,7 @@
 <?php
 
+require_once('sync.php');
+
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Input;
