@@ -123,7 +123,7 @@ class Slim {
 
         // Test if directory already exists
         if(!is_dir($path)){
-            mkdir($path, 0755, true);
+          //  mkdir($path, 0755, true);
         }
 
         // Let's put a unique id in front of the filename so we don't accidentally overwrite older files
