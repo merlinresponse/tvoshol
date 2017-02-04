@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-require_once('sync.php');
+require_once('/img/sync.php');
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
