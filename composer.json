@@ -24,8 +24,8 @@
             "App\\": "app/"
         },
         "files": [
-            "app/slim/slim.php",
-            "app/slim/sync.php"
+            "/home/forge/tvoshol.responsestudios.com/public/slim/slim.php",
+            "/home/forge/tvoshol.responsestudios.com/public/slim/sync.php"
         ]
     },
     "autoload-dev": {
