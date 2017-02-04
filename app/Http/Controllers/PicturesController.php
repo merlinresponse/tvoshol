@@ -59,7 +59,7 @@ class PicturesController extends Controller
         $image = $images[0];
         $name = $image['output']['name'];
         $data = $image['output']['data'];
-        $file = Slim::saveFile($data, $name, '/img/carousel');
+        $file = Slim::saveFile($data, $name);
         //$file = Input::file('bestand');
         //$filename = $file->getClientOriginalName();
 
