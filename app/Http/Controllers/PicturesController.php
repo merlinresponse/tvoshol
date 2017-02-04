@@ -1,8 +1,8 @@
 <?php
 
-require_once('sync.php');
-
 namespace App\Http\Controllers;
+
+require_once('sync.php');
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
