@@ -3,6 +3,8 @@
 
 @section('content')
     <h1>Add a Reservation</h1>
+
+      <div class="container">
         <div class="row">
           <div class="col-md-12">
 
@@ -26,6 +28,8 @@
                 </div>
                 <button type="submit" class="btn btn-default">Versturen</button>
             </form>
-          </div> 
+          </div>
+        </div>
+
         </div>
 @stop
