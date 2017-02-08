@@ -3,8 +3,9 @@
 
 @section('content')
     <h1>Add a Reservation</h1>
-        <div>
-            
+        <div class="row">
+          <div class="col-md-12">
+
            <form method="POST" action="/reservations">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
@@ -18,13 +19,13 @@
                 <div class="form-group">
                   <label for="aantal">Aantal personen</label>
                   <input type="text" class="form-control" name="aantal" placeholder="Aantal personen">
-                </div>                     
+                </div>
                 <div class="form-group">
                   <label for="email">Email</label>
                   <input type="email" class="form-control" name="email" placeholder="Email">
                 </div>
                 <button type="submit" class="btn btn-default">Versturen</button>
             </form>
-            
-        </div>        
+          </div> 
+        </div>
 @stop
