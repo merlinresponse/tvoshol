@@ -6,8 +6,10 @@
 
       <div class="container">
 
+        <div class="row">
         <h1>Add a Reservation</h1>
-
+        </div>
+        
         <div class="row">
           <div class="col-md-12">
 
