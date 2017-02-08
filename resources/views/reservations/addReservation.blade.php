@@ -9,7 +9,7 @@
         <div class="row">
         <h1>Add a Reservation</h1>
         </div>
-        
+
         <div class="row">
           <div class="col-md-12">
 
@@ -26,6 +26,14 @@
                 <div class="form-group">
                   <label for="aantal">Aantal personen</label>
                   <input type="text" class="form-control" name="aantal" placeholder="Aantal personen">
+                </div>
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker1'>
+                        <input type='text' class="form-control" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
                 </div>
                 <div class="form-group">
                   <label for="email">Email</label>
