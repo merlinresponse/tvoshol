@@ -33,3 +33,4 @@ Route::resource('message', 'MessagesController');
 Route::resource('picture', 'PicturesController');
 Route::resource('hour', 'HoursController');
 Route::resource('card', 'CardsController');
+Route::resource('reservation','ReservationsController')
