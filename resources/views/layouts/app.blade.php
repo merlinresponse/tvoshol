@@ -148,7 +148,7 @@
           $('#datetimepicker1').datetimepicker(
             {
               stepping: 15,
-              format: 'D MM YYYY, HH:mm',
+              format: 'D / MM / YYYY, HH:mm',
               sideBySide: true
 
             }
