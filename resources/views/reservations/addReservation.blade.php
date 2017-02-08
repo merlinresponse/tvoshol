@@ -2,9 +2,12 @@
 
 
 @section('content')
-    <h1>Add a Reservation</h1>
+
 
       <div class="container">
+
+        <h1>Add a Reservation</h1>
+
         <div class="row">
           <div class="col-md-12">
 
