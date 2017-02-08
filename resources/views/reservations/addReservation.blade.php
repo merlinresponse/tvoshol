@@ -28,8 +28,9 @@
                   <input type="text" class="form-control" name="aantal" placeholder="Aantal personen">
                 </div>
                 <div class="form-group">
+                    <label for="datetimepicker1">Dag en uur gewenste reservatie</label>
                     <div class='input-group date' id='datetimepicker1'>
-                        <input type='text' class="form-control" />
+                        <input type='text' class="form-control" name="datetimepicker1" />
                         <span class="input-group-addon">
                             <span class="glyphicon glyphicon-calendar"></span>
                         </span>
