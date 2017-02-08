@@ -147,8 +147,10 @@
       $(document).ready(function() {
           $('#datetimepicker1').datetimepicker(
             {
-              stepping: 15
-          
+              stepping: 15,
+              format: 'HH:mm',
+              sideBySide: true
+
             }
           );
       });
