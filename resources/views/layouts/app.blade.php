@@ -147,8 +147,7 @@
       $(document).ready(function() {
           $('#datetimepicker1').datetimepicker(
             {
-              stepping: 15
-              use24hours: true
+                        use24hours: true
             }
           );
       });
