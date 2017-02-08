@@ -148,7 +148,7 @@
           $('#datetimepicker1').datetimepicker(
             {
               stepping: 15,
-              locale: 'be'
+              use24hours: true
             }
           );
       });
