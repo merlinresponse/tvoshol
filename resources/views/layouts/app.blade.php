@@ -148,7 +148,7 @@
           $('#datetimepicker1').datetimepicker(
             {
               stepping: 15,
-              format: 'MMMM Do YYYY, HH:mm',
+              format: 'Do MM YYYY, HH:mm',
               sideBySide: true
 
             }
