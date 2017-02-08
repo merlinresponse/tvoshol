@@ -147,7 +147,8 @@
       $(document).ready(function() {
           $('#datetimepicker1').datetimepicker(
             {
-              stepping: 15
+              stepping: 15,
+              locale: 'be'
             }
           );
       });
