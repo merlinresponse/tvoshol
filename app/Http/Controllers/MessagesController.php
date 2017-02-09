@@ -82,7 +82,7 @@ class MessagesController extends Controller
 
         // Send a notification to Vincent
 
-      
+
 
         // End of notification
         /*
@@ -137,7 +137,7 @@ class MessagesController extends Controller
     public function update(Request $request, $id)
     {
 
-      /*
+    
         $message = Message::find($id);
 
         $message->titelNL = Input::get('titelNL');
@@ -149,7 +149,7 @@ class MessagesController extends Controller
 
         return redirect('/message');
 
-        */
+
     }
 
     /**
@@ -161,23 +161,7 @@ class MessagesController extends Controller
     public function destroy($id)
     {
         $message = Message::find($id);
-        //return $message->attachments;
-        //$size = sizeOf($files); //get the count of number of attachments
-      //  for ($i=0; $i < $size; $i++) {
-        //  $file = $files[$i];
 
-      //  $size = sizeOf($message->attachments);
-
-
-        foreach($message->attachments as $attachment)
-        {
-          $fileToRemove = public_path() . '/uploads/' .$attachment->filename;
-          if (file_exists($fileToRemove) && !is_dir($fileToRemove))
-          {
-            unlink($fileToRemove);
-          }
-
-        }
 
         $message->delete();
 
