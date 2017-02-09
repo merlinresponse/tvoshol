@@ -118,7 +118,7 @@ class PicturesController extends Controller
 
         $picture->beschrijvingNL = Input::get('beschrijvingNL');
         $picture->beschrijvingFR = Input::get('beschrijvingFR');
-        $picture->bestand = Input::get('bestand');
+        //$picture->bestand = Input::get('bestand');
         $picture->tonen = Input::get('tonen');
 
         $picture->save();

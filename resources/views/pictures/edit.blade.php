@@ -1,22 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-       
+
         <div class="container">
-        
+
             <div class="row">
                <div class="col-md-12">
-                  
+
                   <h3>Een afbeelding wijzigen</h3>
-               
+
                </div>
             </div>
-            
+
             </br>
-            
+
             <div class="row">
                <div class="col-md-12">
-               
+
                    {{ Form::model($picture, array('route' => array('picture.update', $picture->id), 'method' => 'PUT', 'files' => true)) }}
 
                         <div class="form-group">
@@ -28,26 +28,21 @@
                             {{ Form::label('beschrijvingFR', 'Beschrijving Frans') }}
                             {{ Form::text('beschrijvingFR', null, array('class' => 'form-control')) }}
                         </div>
-                            
-                        <div class="form-group">
-                            {{ Form::label('bestand', 'Bestandsnaam') }}
-                            {{ Form::file('bestand', null, array('class' => 'form-control')) }}
-                        </div>
-                            
+
                         <div class="form-group">
                             {{ Form::label('tonen', 'Afbeelding weergeven?') }}
-                            {{ Form::checkbox('tonen', true, array('class' => 'form-control')) }}
+                            {{ Form::checkbox('tonen', 1) }}
                         </div>
-        
-                    
-                        {{ Form::submit('Wijziging opslaan', array('class' => 'btn btn-primary')) }}
-                    
-                    {{ Form::close() }}
-                    
 
-               
+
+                        {{ Form::submit('Wijziging opslaan', array('class' => 'btn btn-primary')) }}
+
+                    {{ Form::close() }}
+
+
+
                </div>
             </div>
-            
-        </div>        
+
+        </div>
 @stop
