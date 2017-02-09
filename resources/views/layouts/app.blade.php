@@ -158,18 +158,7 @@
 
     <script src="/slim/slim.kickstart.min.js"></script>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-          $('#datetimepicker1').datetimepicker(
-            {
-              stepping: 15,
-              format: 'D / MM / YYYY, HH:mm',
-              sideBySide: true
 
-            }
-          );
-      });
-    </script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
