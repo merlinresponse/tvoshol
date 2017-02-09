@@ -336,15 +336,15 @@
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
          <div class="form-group">
            <label for="voornaam">Voornaam</label>
-           <input type="text" class="form-control" name="voornaam" placeholder="Voornaam">
+           <input type="text" class="form-control" name="voornaam">
          </div>
          <div class="form-group">
            <label for="naam">Naam</label>
-           <input type="text" class="form-control" name="naam" placeholder="Naam">
+           <input type="text" class="form-control" name="naam">
          </div>
          <div class="form-group">
            <label for="aantal">Aantal personen</label>
-           <input type="text" class="form-control" name="aantal" placeholder="Aantal personen">
+           <input type="text" class="form-control" name="aantal">
          </div>
          <div class="form-group">
              <label for="datetimepicker1">Dag en uur gewenste reservatie</label>
@@ -357,22 +357,23 @@
          </div>
          <div class="form-group">
            <label for="email">Email</label>
-           <input type="email" class="form-control" name="email" placeholder="Email">
+           <input type="email" class="form-control" name="email">
          </div>
          <div class="form-group">
            <label for="telefoon">Telefoonnummer</label>
-           <input type="text" class="form-control" name="telefoon" placeholder="Telefoon">
+           <input type="text" class="form-control" name="telefoon">
          </div>
          <div class="form-group">
            <label for="opmerkingen">Opmerkingen</label>
-           <input type="text" class="form-control" name="opmerkingen" placeholder="Opmerkingen">
+           <input type="text" class="form-control" name="opmerkingen">
          </div>
+          </br>
          <button type="submit" class="btn btn-default">Versturen</button>
      </form>
 
    </div>
-   </div
-
+ </div>
+ </br>
     <small class="text-muted">
       Opgepast, uw reservatie is pas definitief na bevestiging door Gasthof 't Voshol.
     </small>
