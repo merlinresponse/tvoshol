@@ -265,7 +265,7 @@
               <div class="block">
                 <div class="container>
                   <div class="col-sm-12 text-xs-center text-sm-center text-md-center text-lg-center">
-                    <img class="slider-image" style="margin-left:auto;margin-right:auto" src="{{ asset("img/uploads/" . $picture->bestand) }}">
+                    <img class="slider-image" src="{{ asset("img/uploads/" . $picture->bestand) }}">
                   </div>
                 </div>
               </div>
