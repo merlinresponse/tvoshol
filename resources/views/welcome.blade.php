@@ -332,7 +332,7 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
 
-    <form method="POST" action="/reservations">
+    <form method="POST" action="/reservation">
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
          <div class="form-group">
            <label for="voornaam">Voornaam</label>
