@@ -34,7 +34,7 @@
                      <b>Opmerkingen:</b>  {{ $reservation->opmerkingen }}
                      </br>
 
-
+                     <!--
 
                    {{ Form::model($reservation, array('route' => array('reservation.update', $reservation->id), 'method' => 'PUT')) }}
 
@@ -50,7 +50,7 @@
 
                     {{ Form::close() }}
 
-
+                  -->
 
                </div>
             </div>
