@@ -31,7 +31,7 @@ class MessagesController extends Controller
      */
     public function create()
     {
-      //  return view('messages.create');
+      return view('messages.create');
     }
 
     /**
