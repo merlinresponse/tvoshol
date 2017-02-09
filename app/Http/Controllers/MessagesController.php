@@ -120,11 +120,11 @@ class MessagesController extends Controller
     public function edit($id)
     {
                 // get the nerd
-      //  $message = Message::find($id);
+       $message = Message::find($id);
 
         // show the edit form and pass the nerd
-      //  return view('messages.edit')
-        //    ->with('message', $message);
+       return view('messages.edit')
+         ->with('message', $message);
     }
 
     /**
@@ -137,7 +137,7 @@ class MessagesController extends Controller
     public function update(Request $request, $id)
     {
 
-    
+
         $message = Message::find($id);
 
         $message->titelNL = Input::get('titelNL');
