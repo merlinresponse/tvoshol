@@ -39,6 +39,20 @@ class ReservationsController extends Controller
 
             $reservation->save();
 
+            Mail::send('emails.send', [
+
+              'tekst' => 'Controleer je berichten op imaginn.'
+
+            ], function ($message)
+            {
+
+                $message->from('noreply@imaginn.be', 'Contact website');
+                $message->subject('Je hebt een bericht ontvangen.');
+                $message->to('maxime@responsestudios.com');
+
+
+            });
+
             return redirect('/')
             ->with('success', true)->with('message','Reservatie opgeslagen.');
 

@@ -27,7 +27,9 @@
     -->
       <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 
-
+      <link rel="stylesheet" type="text/css" href="{{asset('/slick/slick.css')}}"/>
+      <!-- Add the new slick-theme.css if you want the default styling -->
+      <link rel="stylesheet" type="text/css" href="{{asset('/slick/slick-theme.css')}}"/>
 
 
     <style>
@@ -417,5 +419,22 @@
     </script>
     <script src="js/toolkit.js"></script>
     <script src="js/application.js"></script>
+
+        <script type="text/javascript" src="{{asset('/slick/slick.min.js')}}"></script>
+
+
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.myslider').slick({
+            dots: true,
+            infinite: true,
+            speed: 2000,
+            fade: true,
+            autoplay: true,
+            arrows: true
+
+          });
+        });
   </body>
 </html>
