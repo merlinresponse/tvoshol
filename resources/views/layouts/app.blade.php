@@ -54,8 +54,19 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
 
+                  <li class="nav-item">
+                    <a class="nav-link" href="/reservation">Alle reservaties</a>
+                  </li>
 
-                    <li><a href="/reservation">Alle reservaties</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Boodschappen
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="/message">Alle boodschappen</a>
+                      <a class="dropdown-item" href="/message/create">Nieuwe boodschap</a>
+                    </div>
+                  </li>
 
 
                     <li class="dropdown">
