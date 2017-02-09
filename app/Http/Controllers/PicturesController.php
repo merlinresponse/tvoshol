@@ -123,7 +123,7 @@ class PicturesController extends Controller
 
         $picture->save();
 
-        return redirect('/picture');
+        return redirect('/reservation');
     }
 
     /**

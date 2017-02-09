@@ -349,7 +349,7 @@
          <div class="form-group">
              <label for="datetimepicker1">Dag en uur gewenste reservatie</label>
              <div class='input-group date' id='datetimepicker1'>
-                 <input type='text' class="form-control" name="datetimepicker1" />
+                 <input type='text' class="form-control" name="datetime" />
                  <span class="input-group-addon">
                      <span class="icon icon-calendar"></span>
                  </span>
@@ -360,8 +360,8 @@
            <input type="email" class="form-control" name="email">
          </div>
          <div class="form-group">
-           <label for="telefoon">Telefoonnummer</label>
-           <input type="text" class="form-control" name="telefoon">
+           <label for="tel">Telefoonnummer</label>
+           <input type="text" class="form-control" name="tel">
          </div>
          <div class="form-group">
            <label for="opmerkingen">Opmerkingen</label>
@@ -405,7 +405,7 @@
 
     <script type="text/javascript">
       $(document).ready(function() {
-          $('#datetimepicker1').datetimepicker(
+          $('#datetime').datetimepicker(
             {
               stepping: 15,
               format: 'D / MM / YYYY, HH:mm',

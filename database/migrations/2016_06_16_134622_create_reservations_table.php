@@ -19,10 +19,9 @@ class CreateReservationsTable extends Migration
             $table->string('naam');
             $table->string('email');
             $table->string('tel');
-            $table->text('opmerkingen');
-            $table->boolean('bevestigd');
-            $table->date('reservatiedatum');
-            $table->time('reservatietijd');
+            $table->text('opmerkingen')->nullable();
+            $table->boolean('bevestigd')->default(0);
+            $table->string('datetime');
             $table->timestamps();
         });
     }
