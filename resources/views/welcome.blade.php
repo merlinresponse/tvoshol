@@ -330,7 +330,7 @@
     </p>
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 xs-center">
 
     <form method="POST" action="/reservations">
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -360,12 +360,12 @@
            <input type="email" class="form-control" name="email" placeholder="Email">
          </div>
          <div class="form-group">
-           <label for="tel">Email</label>
-           <input type="text" class="form-control" name="tel" placeholder="Email">
+           <label for="telefoon">Telefoonnummer</label>
+           <input type="text" class="form-control" name="telefoon" placeholder="Telefoon">
          </div>
          <div class="form-group">
-           <label for="opmerkingen">Email</label>
-           <input type="text" class="form-control" name="opmerkingen" placeholder="Email">
+           <label for="opmerkingen">Opmerkingen</label>
+           <input type="text" class="form-control" name="opmerkingen" placeholder="Opmerkingen">
          </div>
          <button type="submit" class="btn btn-default">Versturen</button>
      </form>
