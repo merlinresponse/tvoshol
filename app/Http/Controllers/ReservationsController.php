@@ -72,9 +72,9 @@ class ReservationsController extends Controller
             return redirect('/reservation');
         }
 
-        public function delete(Request $request){
+        public function destroy($id){
 
-            Reservation::find($request->id)->delete();
+            Reservation::find($id)->delete();
 
             return redirect('/reservation')
             ->with('message', 'de reservatie werd verwijderd');
