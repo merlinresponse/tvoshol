@@ -353,7 +353,10 @@
       </div>
        <div class="col-sm-6">
         <h3 class="text-uppercase">Openingsuren</h3>
-        <h6>Shoutout to Invision team for creating the <a href="http://www.invisionapp.com/do">Do UI kit</a> that we used to fake our app screenshots. Also to the Dribbble community for providing phone mockups that look amazing.</h6>
+        @foreach($hours as $hours)
+          <h6>{{$hour->urenNL}}</h6>
+        @endforeach
+        
       </div>
     </div>
   </div>
