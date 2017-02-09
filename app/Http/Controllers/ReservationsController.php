@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Reservation;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
