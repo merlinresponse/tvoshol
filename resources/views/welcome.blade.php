@@ -18,7 +18,14 @@
       <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
       <link href="css/toolkit-minimal.css" rel="stylesheet">
       <link href="css/application-minimal.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
       <link href="/slim/slim.min.css" rel="stylesheet">
+  <!--
+      <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    -->
+      <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 
 
 
@@ -360,9 +367,26 @@
 </div>
 
 
-    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/moment/min/moment.min.js"></script>
+
+    <script type="text/javascript" src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <script src="/slim/slim.kickstart.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#datetimepicker1').datetimepicker(
+            {
+              stepping: 15,
+              format: 'D / MM / YYYY, HH:mm',
+              sideBySide: true
+
+            }
+          );
+      });
+    </script>
     <script src="js/toolkit.js"></script>
     <script src="js/application.js"></script>
-    <script src="/slim/slim.kickstart.min.js"></script>
   </body>
 </html>
