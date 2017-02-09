@@ -329,6 +329,9 @@
       Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
 
+    <div class="row">
+      <div class="col-md-6">
+
     <form method="POST" action="/reservations">
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
          <div class="form-group">
@@ -356,8 +359,20 @@
            <label for="email">Email</label>
            <input type="email" class="form-control" name="email" placeholder="Email">
          </div>
+         <div class="form-group">
+           <label for="tel">Email</label>
+           <input type="text" class="form-control" name="tel" placeholder="Email">
+         </div>
+         <div class="form-group">
+           <label for="opmerkingen">Email</label>
+           <input type="text" class="form-control" name="opmerkingen" placeholder="Email">
+         </div>
          <button type="submit" class="btn btn-default">Versturen</button>
      </form>
+
+   </div>
+   </div
+
     <small class="text-muted">
       Opgepast, uw reservatie is pas definitief na bevestiging door Gasthof 't Voshol.
     </small>
