@@ -251,25 +251,33 @@
 </div>
 
 <div class="block block-bordered-lg p-l-0 p-t-0 p-r-0">
+  <div class="container">
+    <div class="row pos-r">
+      <div class="col-sm-12 text-xs-center text-sm-center text-md-center text-lg-center">
 
-  <div class="myslider">
-  @foreach($pictures as $picture)
+        <div class="row">
 
-    @if($picture->tonen == 1)
+            <div class="myslider">
+            @foreach($pictures as $picture)
 
-    <div class="block">
-      <div class="container text-center app-translate-15" data-transition="entrance">
-        <div class="slider-holder">
-          <img class="img-responsive slider-image" style="width=100%" src="{{ asset("img/uploads/" . $picture->bestand) }}">
+              @if($picture->tonen == 1)
+
+              <div class="block">
+                <div class="container text-center app-translate-15" data-transition="entrance">
+                  <div class="slider-holder">
+                    <img class="img-responsive slider-image" style="width=100%" src="{{ asset("img/uploads/" . $picture->bestand) }}">
+                  </div>
+                </div>
+              </div>
+
+            @endif
+
+            @endforeach
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-  @endif
-
-  @endforeach
-  </div>
-
 </div>
 
 <div class="block block-bordered-lg block-overflow-hidden p-b-0 app-block-design">
@@ -356,7 +364,7 @@
         @foreach($hours as $hours)
           <h6>{{$hour->urenNL}}</h6>
         @endforeach
-        
+
       </div>
     </div>
   </div>
