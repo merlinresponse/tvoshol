@@ -158,7 +158,7 @@ return [
 
 
         Collective\Html\HtmlServiceProvider::class,
-        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class
+      //  Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class
     ],
 
     /*
