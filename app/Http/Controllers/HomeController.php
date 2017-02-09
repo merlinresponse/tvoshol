@@ -16,14 +16,14 @@ class HomeController extends Controller
      *
      * @return void
      */
-    
+
     /*
-    
+
     public function __construct()
     {
         $this->middleware('auth');
     }
-    
+
     */
 
     /**
@@ -31,15 +31,19 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
-    
-    
-    
+
+
+
+
     public function index()
     {
-        
+
         $messages = Message::orderBy('created_at', 'desc')->take(1)->get();
-                
-        return view('welcome', compact('messages'));
+        $cards = Card::orderBy('created_at', 'desc')->take(1)->get();
+        $hours = Hour::orderBy('created_at', 'desc')->take(1)->get();
+        $pictures = Picture::orderBy('created_at', 'desc')->get();
+
+
+        return view('welcome', compact('messages','cards','hours','pictures'));
     }
 }

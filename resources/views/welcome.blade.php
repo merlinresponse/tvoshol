@@ -74,19 +74,19 @@
     <div class="navbar-collapse collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li >
-          <a href="#reserveren">reserveren</a>
+          <a href="/#reserveren">reserveren</a>
         </li>
         <li class="active">
-          <a href="#waardebon">waardebon</a>
+          <a href="/#waardebon">waardebon</a>
         </li>
         <li >
-          <a href="#menu">menu</a>
+          <a href="/#menu">menu</a>
         </li>
         <li >
-          <a href="#gin">gin</a>
+          <a href="/#gin">gin</a>
         </li>
         <li >
-          <a href="#contact">contact</a>
+          <a href="/#contact">contact</a>
         </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -136,7 +136,7 @@
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
-            <button class="btn btn-primary m-b">Menukaart raadplegen</button>
+            <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $cards->menukaartNL) }}">Menukaart raadplegen</a>
           </div>
         </div>
       </div>
@@ -249,65 +249,25 @@
 </div>
 
 <div class="block block-bordered-lg p-l-0 p-t-0 p-r-0">
-  <div id="carousel-example-generic-2" class="carousel carousel-light slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="block">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <p class="lead m-x-auto text-center">
-                Steeds iets te beleven.
-                </p>
-              </div>
-            </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide1_low.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="block">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <p class="lead m-x-auto text-center">
-                  Gezellige terras onder de kerktoren.
-                </p>
-              </div>
-            </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide2_low.jpg">
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="block">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <p class="lead m-x-auto text-center">
-                Gelegen op het knooppunt van vele touristische routes.
-                </p>
-              </div>
-            </div>
-            <img class="img-responsive m-t-lg app-block-game-img" src="img/slide3_low.jpg">
-          </div>
+
+  <div class="myslider">
+  @foreach($pictures as $picture)
+
+    @if($image->tonen == 1)
+
+    <div class="block">
+      <div class="container text-center app-translate-15" data-transition="entrance">
+        <div class="slider-holder">
+          <img class="img-responsive slider-image" style="width=100%" src="{{ asset("img/uploads/" . $image->bestand) }}">
         </div>
       </div>
     </div>
-    <a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
-      <span class="icon icon-chevron-thin-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
-      <span class="icon icon-chevron-thin-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+
+  @endif
+
+  @endforeach
   </div>
+
 </div>
 
 <div class="block block-bordered-lg block-overflow-hidden p-b-0 app-block-design">
@@ -420,7 +380,7 @@
     <script src="js/toolkit.js"></script>
     <script src="js/application.js"></script>
 
-        <script type="text/javascript" src="{{asset('/slick/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/slick/slick.min.js')}}"></script>
 
 
 
