@@ -329,22 +329,35 @@
       Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
     </p>
 
-    <form class="form-inline" method="POST" action="/reservations">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-        <input name="voornaam" class="form-control m-b" placeholder="Voornaam">
-        <input name="naam" class="form-control m-b" placeholder="Naam">
-        </br>
-        <input name="email" class="form-control m-b" placeholder="Email">
-        <input name="tel" class="form-control m-b" placeholder="Telefoon">
-        </br>
-        <input name="reservatiedatum" class="form-control m-b" placeholder="Datum">
-        <input name="reservatietijd" class="form-control m-b" placeholder="Tijdstip">
-        <input name="aantal" class="form-control m-b" placeholder="Aantal personen">
-        </br>
-        <input name="opmerkingen" class="form-control m-b" placeholder="Opmerkingen">
-        </br>
-        <button class="btn btn-primary m-b">Reservatie versturen</button>
-    </form>
+    <form method="POST" action="/reservations">
+         <input type="hidden" name="_token" value="{{ csrf_token() }}">
+         <div class="form-group">
+           <label for="voornaam">Voornaam</label>
+           <input type="text" class="form-control" name="voornaam" placeholder="Voornaam">
+         </div>
+         <div class="form-group">
+           <label for="naam">Naam</label>
+           <input type="text" class="form-control" name="naam" placeholder="Naam">
+         </div>
+         <div class="form-group">
+           <label for="aantal">Aantal personen</label>
+           <input type="text" class="form-control" name="aantal" placeholder="Aantal personen">
+         </div>
+         <div class="form-group">
+             <label for="datetimepicker1">Dag en uur gewenste reservatie</label>
+             <div class='input-group date' id='datetimepicker1'>
+                 <input type='text' class="form-control" name="datetimepicker1" />
+                 <span class="input-group-addon">
+                     <span class="glyphicon glyphicon-calendar"></span>
+                 </span>
+             </div>
+         </div>
+         <div class="form-group">
+           <label for="email">Email</label>
+           <input type="email" class="form-control" name="email" placeholder="Email">
+         </div>
+         <button type="submit" class="btn btn-default">Versturen</button>
+     </form>
     <small class="text-muted">
       Opgepast, uw reservatie is pas definitief na bevestiging door Gasthof 't Voshol.
     </small>
