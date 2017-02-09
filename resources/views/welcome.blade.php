@@ -347,8 +347,8 @@
            <input type="text" class="form-control" name="aantal">
          </div>
          <div class="form-group">
-             <label for="datetimepicker1">Dag en uur gewenste reservatie</label>
-             <div class='input-group date' id='datetimepicker1'>
+             <label for="datetime">Dag en uur gewenste reservatie</label>
+             <div class='input-group date' id='datetime'>
                  <input type='text' class="form-control" name="datetime" />
                  <span class="input-group-addon">
                      <span class="icon icon-calendar"></span>
