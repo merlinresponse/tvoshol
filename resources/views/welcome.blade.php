@@ -255,12 +255,12 @@
   <div class="myslider">
   @foreach($pictures as $picture)
 
-    @if($image->tonen == 1)
+    @if($picture->tonen == 1)
 
     <div class="block">
       <div class="container text-center app-translate-15" data-transition="entrance">
         <div class="slider-holder">
-          <img class="img-responsive slider-image" style="width=100%" src="{{ asset("img/uploads/" . $image->bestand) }}">
+          <img class="img-responsive slider-image" style="width=100%" src="{{ asset("img/uploads/" . $picture->bestand) }}">
         </div>
       </div>
     </div>
