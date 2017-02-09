@@ -136,7 +136,9 @@
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
-            <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $cards->menukaartNL) }}">Menukaart raadplegen</a>
+            @foreach($cards as $card)
+              <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $cards->menukaartNL) }}">Menukaart raadplegen</a>
+            @endforeach
           </div>
         </div>
       </div>
