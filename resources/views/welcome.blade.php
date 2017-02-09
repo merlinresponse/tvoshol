@@ -250,7 +250,7 @@
   </div>
 </div>
 
-<div class="block block-bordered-lg p-l-0 p-t-0 p-r-0">
+<div class="block">
   <div class="container">
     <div class="row pos-r">
       <div class="col-sm-12 text-xs-center text-sm-center text-md-center text-lg-center">
