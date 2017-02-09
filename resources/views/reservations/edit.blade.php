@@ -42,7 +42,7 @@
 
                         <div class="form-group">
                             {{ Form::label('bevestigd', 'Reservatie bevestigd?') }}
-                            {{ Form::checkbox('bevestigd',1, $reservation->bevestigd, array('class' => 'form-control')) }}
+                            {{ Form::checkbox('bevestigd',1, $reservation->bevestigd) }}
                         </div>
 
 
