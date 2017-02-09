@@ -45,9 +45,9 @@ class MessagesController extends Controller
 
       // create the validation rules ------------------------
       $rules = array(
-          'voornaam'             => 'required',                       // just a normal required validation
-          'naam'            => 'required',    // required and must be unique in the ducks table
-          'email'         => 'required|email'
+          'titelNL'             => 'required',                       // just a normal required validation
+          'tekstNL'            => 'required'    // required and must be unique in the ducks table
+
                    // required and has to match the password field
       );
 
@@ -63,7 +63,7 @@ class MessagesController extends Controller
 
         if ($validator->fails()) {
           $messages = $validator->messages();
-            return redirect('contact')
+            return redirect('message')
                         ->withErrors($validator)
                         ->withInput();
         }
@@ -72,52 +72,17 @@ class MessagesController extends Controller
 
         $message = new Message;
 
-        $message->voornaam = $request->voornaam;
-        $message->naam = $request->naam;
-        $message->email = $request->email;
-        $message->tel = $request->tel;
-        $message->adres = $request->adres;
-        $message->beschrijving = $request->beschrijving;
-        $message->stijl = $request->stijl;
+        $message->titelNL = $request->titelNL;
+        $message->titelFR = $request->titelFR;
+        $message->tekstNL = $request->tekstNL;
+        $message->tekstFR = $request->tekstFR;
+
         $message->save();
 
-        // Attachments upload and database save;
-
-        $files = Input::file('images');
-        // Making counting of uploaded images
-        $file_count = count($files);
-        // start count how many uploaded
-        $uploadcount = 0;
-        foreach((array)$files as $file) {
-          $rules = array('file' => 'max:1000|mimes:png,gif,jpeg,txt,pdf,doc'); //'required|mimes:png,gif,jpeg,txt,pdf,doc'
-          $validator = Validator::make(array('file'=> $file), $rules);
-          if($validator->passes()){
-            $destinationPath = 'uploads';
-            $filename = $file->getClientOriginalName();
-            $upload_success = $file->move($destinationPath, $filename);
-            $uploadcount ++;
-            $attachment = new Attachment;
-            $attachment->message_id = $message->id;
-            $attachment->filename = $filename;
-            $attachment->save();
-          }
-        }
 
         // Send a notification to Vincent
 
-        Mail::send('emails.send', [
-
-          'tekst' => 'Controleer je berichten op imaginn.'
-
-        ], function ($message)
-        {
-
-            $message->from('noreply@imaginn.be', 'Contact website');
-            $message->subject('Je hebt een bericht ontvangen.');
-            $message->to('maxime@responsestudios.com');
-
-
-        });
+      
 
         // End of notification
         /*
