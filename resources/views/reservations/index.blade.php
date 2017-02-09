@@ -51,12 +51,10 @@
                 <a class="btn btn-small btn-info" href="{{ URL::to('reservation/' . $reservation->id . '/edit') }}">Reservatie wijzigen</a>
                 </br>
                 </br>
-                <form method="POST" action="/reservation/delete">
-                    <input type="hidden" name="_method" value="delete" />
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                    <input type="hidden" name="id" value="{{ $reservation->id }}">
-                    <button type="submit" class="btn btn-danger">Verwijderen</button>
-                </form>
+          
+                {{ Form::open(['method' => 'DELETE', 'route' => ['reservation.destroy', $reservation->id]]) }}
+                    {{ Form::submit('Verwijderen', ['class' => 'btn btn-danger']) }}
+                {{ Form::close() }}
 
             </div>
 
