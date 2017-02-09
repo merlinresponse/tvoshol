@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use App\Message;
+use App\Card;
+use App\Hour;
+use App\Picture;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
