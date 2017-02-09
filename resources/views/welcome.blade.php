@@ -361,7 +361,7 @@
       </div>
        <div class="col-sm-6">
         <h3 class="text-uppercase">Openingsuren</h3>
-        @foreach($hours as $hours)
+        @foreach($hours as $hour)
           <h6>{{$hour->urenNL}}</h6>
         @endforeach
 
