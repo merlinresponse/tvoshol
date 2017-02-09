@@ -330,7 +330,7 @@
     </p>
 
     <div class="row center-block">
-      <div class="col-md-6 center-block">
+      <div class="col-md-6 col-offset-3 center-block">
 
     <form method="POST" action="/reservations">
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
