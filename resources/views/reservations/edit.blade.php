@@ -34,7 +34,7 @@
                      <b>Opmerkingen:</b>  {{ $reservation->opmerkingen }}
                      </br>
 
-                     <!--
+
 
                    {{ Form::model($reservation, array('route' => array('reservation.update', $reservation->id), 'method' => 'PUT')) }}
 
@@ -42,7 +42,7 @@
 
                         <div class="form-group">
                             {{ Form::label('bevestigd', 'Reservatie bevestigd?') }}
-                            {{ Form::checkbox('bevestigd', array('class' => 'form-control')) }}
+                            {{ Form::checkbox('bevestigd',1, array('class' => 'form-control')) }}
                         </div>
 
 
@@ -50,7 +50,7 @@
 
                     {{ Form::close() }}
 
-                  -->
+
 
                </div>
             </div>
