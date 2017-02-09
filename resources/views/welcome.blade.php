@@ -351,7 +351,7 @@
              <div class='input-group date' id='datetimepicker1'>
                  <input type='text' class="form-control" name="datetimepicker1" />
                  <span class="input-group-addon">
-                     <span class="glyphicon glyphicon-calendar"></span>
+                     <span class="icon icon-calendar"></span>
                  </span>
              </div>
          </div>
