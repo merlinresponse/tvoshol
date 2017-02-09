@@ -264,7 +264,7 @@
 
               <div class="block">
                 <div class="container text-center app-translate-15" data-transition="entrance">
-                  <div class="slider-holder">
+                  <div class="slider-holder text-xs-center text-sm-center text-md-center text-lg-center">
                     <img class="img-responsive slider-image" style="width=100%" src="{{ asset("img/uploads/" . $picture->bestand) }}">
                   </div>
                 </div>
