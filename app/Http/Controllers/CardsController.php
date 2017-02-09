@@ -40,7 +40,7 @@ class CardsController extends Controller
      */
     public function store(Request $request)
     {
-        
+
           $validator = Validator::make($request->all(), [
             'menukaartNL' => 'required',
             'menukaartFR' => 'required',
@@ -51,23 +51,23 @@ class CardsController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-        
+
         $fileNL = Input::file('menukaartNL');
         $filenameNL = $fileNL->getClientOriginalName();
-        
+
         $fileFR = Input::file('menukaartFR');
         $filenameFR = $fileFR->getClientOriginalName();
-        
+
         $card = new Card;
-        
+
         $card->menukaartNL = $filenameNL;
         $card->menukaartFR = $filenameFR;
-        
+
         $card->save();
-        
+
         $fileNL->move(public_path() . '/img/cards', $filenameNL);
         $fileFR->move(public_path() . '/img/cards', $filenameFR);
-        
+
         return redirect('/card')
             ->with('success', true)->with('card','Menukaart opgeslagen.');
     }
@@ -92,11 +92,11 @@ class CardsController extends Controller
     public function edit($id)
     {
                 // get the nerd
-        $card = Card::find($id);
+    //    $card = Card::find($id);
 
         // show the edit form and pass the nerd
-        return view('cards.edit')
-            ->with('card', $card);
+      //  return view('cards.edit')
+        //    ->with('card', $card);
     }
 
     /**
@@ -107,15 +107,15 @@ class CardsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {        
-        $card = Card::find($id);
-        
+    {
+      /*  $card = Card::find($id);
+
         $card->menukaartNL = Input::get('menukaartNL');
         $card->menukaartFR = Input::get('menukaartFR');
-        
+
         $card->save();
-        
-        return redirect('/card');
+
+        return redirect('/card'); +/
     }
 
     /**
@@ -127,21 +127,21 @@ class CardsController extends Controller
     public function destroy($id)
     {
         $card = Card::find($id);
-        
+
         $filenameNL = $card->menukaartNL;
         $fileNL = public_path() . '/img/cards/' . $filenameNL;
-        
+
         if (file_exists($fileNL) && !is_dir($fileNL)) {
                 unlink($fileNL);
         }
 
         $filenameFR = $card->menukaartFR;
         $fileFR = public_path() . '/img/cards/' . $filenameFR;
-        
+
         if (file_exists($fileFR) && !is_dir($fileFR)) {
                 unlink($fileFR);
-        }        
-        
+        }
+
         $card->delete();
 
         // redirect
