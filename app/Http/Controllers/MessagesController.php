@@ -123,8 +123,7 @@ class MessagesController extends Controller
        $message = Message::find($id);
 
         // show the edit form and pass the nerd
-       return view('messages.edit')
-         ->with('message', $message);
+       return view('messages.edit')->with('message', $message);
     }
 
     /**
