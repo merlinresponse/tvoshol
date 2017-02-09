@@ -22,10 +22,10 @@ Route::auth();
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/reservations', 'ReservationsController@index');
-Route::get('/addreservation', 'ReservationsController@add');
-Route::post('/reservations', 'ReservationsController@store');
-Route::delete('/reservations/delete', 'ReservationsController@delete');
+//Route::get('/reservations', 'ReservationsController@index');
+//Route::get('/addreservation', 'ReservationsController@add');
+//Route::post('/reservations', 'ReservationsController@store');
+//Route::delete('/reservations/delete', 'ReservationsController@delete');
 
 /*Route::get('/shops/{shop}', 'ShopController@show');*/
 
