@@ -6,7 +6,7 @@ use App\Reservation;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-
+use Mail;
 use App\Http\Requests;
 
 class ReservationsController extends Controller
