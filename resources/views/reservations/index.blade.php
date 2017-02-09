@@ -49,7 +49,7 @@
             <div class="col-md-2">
 
                 <a class="btn btn-small btn-info" href="{{ URL::to('reservation/' . $reservation->id . '/edit') }}">Reservatie wijzigen</a>
-
+                </br>
                 <form method="POST" action="/reservations/delete">
                     <input type="hidden" name="_method" value="delete" />
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
