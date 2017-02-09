@@ -22,7 +22,12 @@
                 </br>
                 <b>Opmerkingen:</b>  {{ $reservation->opmerkingen }}
                 </br>
-                <b>Reeds bevestigd?</b>  {{ $reservation->bevestigd }}
+                <b>Reeds bevestigd?</b>
+                @if($reservation->bevestigd)
+                  Ja
+                @else
+                  Nee
+                @endif
                 </br>
 
             </div>
@@ -35,7 +40,8 @@
                 </br>
                 <b>Telefoonnummer:</b>  {{ $reservation->tel }}
                 </br>
-                <b>Email:</b>  {{ $reservation->email }}
+                <b>Email:</b>  <a href={{"mailto:" . $reservation->email}} target="_top">{{$reservation->email}}</a>
+</p>
                 </br>
 
             </div>
