@@ -264,9 +264,9 @@
 
               <div class="block">
                 <div class="container text-center app-translate-15" data-transition="entrance">
-
+                  <div class="col-sm-12 text-xs-center text-sm-center text-md-center text-lg-center">
                     <img class="slider-image" src="{{ asset("img/uploads/" . $picture->bestand) }}">
-
+                  </div>
                 </div>
               </div>
 
