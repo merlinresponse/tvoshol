@@ -265,7 +265,7 @@
               <div class="block">
                 <div class="container">
 
-                    <img class="img-responsive slider-image" src="{{ asset("img/uploads/" . $picture->bestand) }}">
+                    <img class="img-responsive slider-image center-block" src="{{ asset("img/uploads/" . $picture->bestand) }}">
 
                 </div>
               </div>
