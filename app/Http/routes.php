@@ -20,12 +20,9 @@
 
 Route::auth();
 
-Route::group(
-[
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localize' ]
-], function()
-{
+
+    Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+    {
 
       Route::get('/', 'HomeController@index');
 
