@@ -88,6 +88,15 @@
         <li >
           <a href="/#contact">contact</a>
         </li>
+        <li >
+            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                @unless(LaravelLocalization::getCurrentLocale() == $properties['name'])
+                    <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+                        {{ $properties['native'] }}
+                    </a>
+                @endunless
+            @endforeach
+        </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
