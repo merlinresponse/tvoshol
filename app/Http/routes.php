@@ -20,7 +20,16 @@
 
 Route::auth();
 
-Route::get('/', 'HomeController@index');
+Route::group(
+[
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [ 'localize' ]
+], function()
+{
+
+      Route::get('/', 'HomeController@index');
+
+  });
 
 //Route::get('/reservations', 'ReservationsController@index');
 //Route::get('/addreservation', 'ReservationsController@add');
