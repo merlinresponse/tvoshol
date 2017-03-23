@@ -68,25 +68,25 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="../">
-        <span>Gasthof 't Voshol</span>
+        <span>@lang('messages.gasthof')</span>
       </a>
     </div>
     <div class="navbar-collapse collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li >
-          <a href="/#reserveren">reserveren</a>
+          <a href="/#reserveren">@lang('messages.reserveren')</a>
         </li>
         <li class="active">
-          <a href="/#waardebon">waardebon</a>
+          <a href="/#waardebon">@lang('messages.waardebon')</a>
         </li>
         <li >
-          <a href="/#menu">menu</a>
+          <a href="/#menu">@lang('messages.menu')</a>
         </li>
         <li >
-          <a href="/#gin">gin</a>
+          <a href="/#gin">@lang('messages.gin')</a>
         </li>
         <li >
-          <a href="/#contact">contact</a>
+          <a href="/#contact">@lang('messages.contact')</a>
         </li>
         <li >
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -109,7 +109,7 @@
             @if(Session::has('success'))
             <div class="alert alert-success">
                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <strong>Perfect!</strong> {{ Session::get('message', '') }}
+            <strong>@lang('messages.perfect')</strong> {{ Session::get('message', '') }}
             </div>
             @endif
 
@@ -121,9 +121,9 @@
   <div class="container text-center app-translate-15" data-transition="entrance">
     <img src="img/logo_tvoshol.gif">
     <blockquote class="pull-quote">
-        <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">Restaurant & Tearoom</h2>
+        <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">@lang('messages.restaurant')</h2>
       <p>
-        Leisele, gelegen "Bachten de Kupe", aan de grens van ons Belgisch grondgebied, verdoken in de verre Westhoek, een mooie landelijke gemeente, met beschermd dorpsgezicht op zowat 12km van Veurne, 15km van de Kust, 25km van Ieper en 4km van het franse Hondschoote. Filmdorp tijdens de opnames van VRT-feuilleton "De Bossen van Vlaanderen". Op het dorpsplein rechtover de Kerk en de kiosk.
+          @lang('messages.bachten')
       </p>
     </blockquote>
   </div>
@@ -141,12 +141,12 @@
       </div>
       <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
-          Gasthof 't Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. U kan deze via onderstaande link meteen raadplegen.
+            @lang('messages.menukaart')
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
             @foreach($cards as $card)
-              <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $card->menukaartNL) }}">Menukaart raadplegen</a>
+              <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $card->menukaartNL) }}">@lang('messages.raaplegen')</a>
             @endforeach
           </div>
         </div>
@@ -161,11 +161,11 @@
     <div class="row">
       <div class="col-md-7 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
-<strong>FOXGIN is een exclusieve in Belgie gestookte gin</strong>, gemaakt van het zuivere water uit de Dolomieten. Toetsen van citrus en lavendel combineren tot een fris en zuiders boeket. Samengesteld door B. Dedeckere. <strong>Enjoy Responsibly.</strong>
+            @lang('messages.foxgin')
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
-            <button class="btn btn-primary m-b">Uw Foxgin bestellen</button>
+            <button class="btn btn-primary m-b">@lang('messages.bestellen')</button>
           </div>
         </div>
       </div>
@@ -203,7 +203,7 @@
   <div class="container">
     <div class="row">
     <div class="col-sm-8 col-sm-offset-2 text-center m-b-lg">
-      <p class="lead m-x-auto">Sinds de start houdt Gasthof 't Voshol vast aan deze <strong>troeven</strong>. </p>
+      <p class="lead m-x-auto">@lang('messages.troeven')</p>
     </div>
     </div>
     <div class="row">
@@ -213,9 +213,9 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-cake"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Kwaliteit en Kwantiteit zijn onze troeven.</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>@lang('messages.kwaliteit')</strong></p>
             <p class="featured-list-icon-text">
-                Sinds 1990 is Gasthof 't Voshol de referentie voor een eerlijke en dagverse keuken.
+                @lang('messages.kwaliteit_tekst')
             </p>
           </li>
 
@@ -223,9 +223,9 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-drink"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Genieten voor Jong en Oud</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>@lang('messages.genieten')</strong></p>
             <p class="featured-list-icon-text">
-                Ons restaurant biedt voor ieder wat wils. Van romantisch moment tot heus familiediner, voor iedereen wat in Gasthof 't Voshol.
+                @lang('messages.genieten_tekst')
             </p>
           </li>
 
@@ -238,9 +238,9 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-tripadvisor"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Knooppunt van fietsroutes</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>@lang('messages.knooppunt')</strong></p>
             <p class="featured-list-icon-text">
-            Leisele ligt op een knooppunt van fietsroutes. Fietsers kunnen bij ons genieten van lekker gebak vooraleer hun fietstocht verder te zetten.
+                @lang('messages.knooppunt_tekst')
             </p>
           </li>
 
@@ -248,9 +248,9 @@
             <div class="featured-list-icon text-primary">
               <span class="icon icon-tree"></span>
             </div>
-            <p class="featured-list-icon-text m-b-0"><strong>Duurzame horeca</strong></p>
+            <p class="featured-list-icon-text m-b-0"><strong>@lang('messages.duurzaam')</strong></p>
             <p class="featured-list-icon-text">
-             Gasthof 't Voshol draagt een steentje bij aan duurzaam en milieubewust leven. Sinds kort voorzien we zelfs in een stroompunt voor onze gasten met electrische fiets.
+                @lang('messages.duurzaam_tekst')
             </p>
           </li>
         </ul>
@@ -294,7 +294,7 @@
     <div class="row pos-r">
       <div class="col-sm-5 text-xs-center text-sm-left">
         <p class="lead">
-          <strong>Bent u fan van Gasthof 't Voshol?</strong> Deel uw ervaring met uw vrienden en schenk hen de enige echte Gasthof 't Voshol waardebon. Deze leuke attentie is beschikbaar op eenvoudige vraag in het restaurant.
+            @lang('messages.fan')
         </p>
       </div>
       <div class="col-sm-7">
@@ -307,7 +307,7 @@
 <div id="reserveren" class="block block-bordered-lg text-center">
   <div class="container-fluid">
     <p class="lead m-b-md">
-      Bij Gasthof 't Voshol kan u meteen <strong>online reserveren</strong>.</br>Vul onderstaand formulier aan en leg alvast uw bezoek bij ons vast!
+        @lang('messages.online_reserveren')
     </p>
 
     <div class="row">
@@ -316,19 +316,19 @@
     <form method="POST" action="/reservation">
          <input type="hidden" name="_token" value="{{ csrf_token() }}">
          <div class="form-group">
-           <label for="voornaam">Voornaam</label>
+           <label for="voornaam">@lang('messages.voornaam')</label>
            <input type="text" class="form-control" name="voornaam">
          </div>
          <div class="form-group">
-           <label for="naam">Naam</label>
+           <label for="naam">@lang('messages.naam')</label>
            <input type="text" class="form-control" name="naam">
          </div>
          <div class="form-group">
-           <label for="aantal">Aantal personen</label>
+           <label for="aantal">@lang('messages.aantal')</label>
            <input type="text" class="form-control" name="aantal">
          </div>
          <div class="form-group">
-             <label for="datetime">Dag en uur gewenste reservatie</label>
+             <label for="datetime">@lang('messages.dag')</label>
              <div class='input-group date' id='datetime'>
                  <input type='text' class="form-control" name="datetime" />
                  <span class="input-group-addon">
@@ -337,26 +337,26 @@
              </div>
          </div>
          <div class="form-group">
-           <label for="email">Email</label>
+           <label for="email">@lang('messages.email')</label>
            <input type="email" class="form-control" name="email">
          </div>
          <div class="form-group">
-           <label for="tel">Telefoonnummer</label>
+           <label for="tel">@lang('messages.telefoonnummer')</label>
            <input type="text" class="form-control" name="tel">
          </div>
          <div class="form-group">
-           <label for="opmerkingen">Opmerkingen</label>
+           <label for="opmerkingen">@lang('messages.opmerkingen')</label>
            <input type="text" class="form-control" name="opmerkingen">
          </div>
           </br>
-         <button type="submit" class="btn btn-default">Versturen</button>
+         <button type="submit" class="btn btn-default">@lang('messages.versturen')</button>
      </form>
 
    </div>
  </div>
  </br>
     <small class="text-muted">
-      Opgepast, uw reservatie is pas definitief na bevestiging door Gasthof 't Voshol.
+        @lang('messages.opgepast')
     </small>
   </div>
 </div>
@@ -365,11 +365,11 @@
   <div class="container">
     <div class="row">
        <div class="col-sm-6">
-        <h3 class="text-uppercase"></h3>Contactgegevens & Sociale Media</h3>
-        <h6>Gasthof 't Voshol</br>Leiseledorp 20</br>8691 Leisele</br>T: +32 (0)58 29 81 57</br>info@tvoshol.be</h6>
+        <h3 class="text-uppercase"></h3>@lang('messages.contactgegevens')</h3>
+        <h6>@lang('messages.adres')</h6>
       </div>
        <div class="col-sm-6">
-        <h3 class="text-uppercase">Openingsuren</h3>
+        <h3 class="text-uppercase">@lang('messages.openingsuren')</h3>
         @foreach($hours as $hour)
           <h6>{{$hour->urenNL}}</h6>
         @endforeach

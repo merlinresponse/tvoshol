@@ -13,82 +13,43 @@ return [
     |
     */
 
-    // TEKST FR
+    // TEKST NL
 
-    'welcome' => 'Le challenge? Trouver les bonnes proportions, dans l\'architecture même et en relation avec l\'environnement, vis-à-vis de l\'intérieur ou part rapport aux (futurs) habitants.
-    En grandes lignes, ou dans les petits détails... Très souvent en enlevant, qu\'en rajoutant. Tel est le pouvoir de la création durable.',
-    'imaginnEnU'     => 'imaginn et vous',
-    'kopen' => 'vous achetez',
-    'kopen_tekst' => 'Vous souhaitez acquérir un bien, mais vous n\'êtes pas sûr que ce bien ait le potentiel que vous aviez en tête. Un croquis ou une visualisation d\'Imaginn peut vous rassurer pour votre achat.',
-    'kopen_detail_tekst' => 'Vous avez une maison en tête qui répond à vos attentes en matière de budget ou de localisation, hors il vous manque quelques qualités architecturales?
-    Et vous souhaitez avoir une idée rapidement concernant le potentiel de cette maison?
-
-    Nous examinons les opportunités d\'un bien existant sur le plan de l\'architecture et de la faisabilité.
-    Les constructions moins attrayantes sont souvent démolis, bien que cela ne doit pas être la seule option envisageable.
-    Il y a souvent des alternatives ou des solutions qui ne sont pas apparents à première vue. De plus, le tarif de 6% peut être un stimulus additionnel.</br></br>
-    Des petites interventions peuvent faire des miracles. Notre expertise et nos simulations permettent de voire à quoi un projet peut ressembler. Nos solutions d\'imagerie s\'adaptent à tout type de budget ou de maison.
-
-    Nous estimons les budgets pour réaliser votre projet. Nous essayons d\'informer les futurs propriétaires concernant les opportunités et les dangers et nous essayons de révéler les éventuels complexités de la construction ou de la achat. Tour cela en tout indépendence.
-    Au moment de l\'achat nous sommes conscients de l\'importance d\'un conseil impartial dans les choix à venir. Nous attachons une grande importance à la liberté dans vos choix.',
-    'lees' => 'En savoir plus',
-    'verkopen' => 'vous vendez',
-    'verkopen_tekst' => 'Donnez la vente de votre immobilier un coup de pouce en présentant aux potentiels acheteurs un visuel ou un concept bien fondé.',
-    'verkopen_detail_tekst' => 'Est-ce ue votre bien se vend mal ?</br></br>
-    La majorité des acheteurs cherchent une maison, un bien commercial très souvent via l\'Internet sur base de critères objectives comme la localisation, la proximité de ..., du budget,... et puis ils parcourent ce qui plaît.
-    Pleins d\'entre eux rattent des opportunités qui ne sont pas toujours apparents à premère vue.
-    Nous essayons d\'indiquer et de souligner les opportunités auprès des achteteurs potentiels. Nous sommes convaincus que cela suscite une attention plus grande et une audience plus large.
-    Nous pouvons varier en matière de style, d\'impact et de budget pour plaire à un maximum de personnes.',
-    'verbouwen' => 'vous renovez',
-    'verbouwen_tekst' => 'Vous êtes prêts à transformer votre bien dans la maison de vos rêves?
-    Une visualisation ou un plan d\'action conçu par Imaginn vous mettent dès le départ sur la bonne voie et vous évitent des surprises en fin de parcours',
-    'verhalen' => 'Témoignages',
-    'kl_projecten' => 'Petits projets',
-    'mg_projecten' => 'Projects de moyenne taille',
-    'gr_projecten' => 'Grands projets',
-    'troeven' => 'Atouts',
-    'werk' => 'Réalisations',
+    'gasthof' => 'Gasthof \'t Voshol',
+    'reserveren' => 'réserver',
+    'waardebon' => 'bon à valeur',
+    'menu' => 'menu',
+    'gin' => 'gin',
     'contact' => 'contact',
-    'transparant' => 'Choisir en toute transparence',
-    'transparant_tekst' => 'Chez Imaginn c\'est vous qui déterminez notre degré de soutien dans la réalisation du potentiel de votre bien. Peut-être qu\'un croquis vous suffit, ou peut-être qu\'une visualisation ou plan d\'action est conseillé.',
-    'ervaring' => 'Expérience et baggage technique',
-    'ervaring_tekst' => 'Pour visualiser la maison de vos rêves vous pouvez compter sur l\'expertise d\'un architecte qui peut rapidement cadrer l\'impact de vos souhaits.
-    Ceci vous permet d\'estimer la faisabilité de votre projet sur base d\'une belle photo.',
-    'maat' => 'Accessible à tout budget',
-    'maat_tekst' => 'Imaginn travaille avec la même passion sur un simple croquis pour une maison modeste que pour un plan d\'action pour une grande villa.',
-    'duurzaam' => 'Arhcitecture durable',
-    'duurzaam_tekst' => 'Imaginn traduit l\'habitation durable vers une consommation énergetique selon les dernières normes, une esthétique durable dans le temps et une philosophie \'cradle-to-cradle\' pointu.',
-    'benieuwd' => 'Vous souhaitez découvrir nos solutions?',
-    'benieuwd_tekst' => 'Evidemment Imaginn vous propose une approche sur mesure.
-            Vous avez un projet concret en tête ou vous avez une question, n\'hésitez pas à nous contacter sans obligation via notre formulaire.
-            Une information complète nous permet de vite répondre à votre demande.',
-    'contacteer_ons' => 'Contactez nous',
-    'contactgegevens' => 'Coordonnez',
-    'social_media' => 'Réseaux sociaux',
-    'social_media_tekst' => 'Suivez Imaginn via notre <a href="http://www.facebook.com/imaginnkortrijk">fan page </a>Facebook',
-    'stappen' => 'Les étappes',
-    'stap1' => 'Etappe 1',
-    'stap1_kopen_tekst' => 'Hier komt tekst voor die stap',
-    'stap1_verkopen_tekst' => 'Hier komt tekst voor die stap',
-    'stap2' => 'Etappe 2',
-    'stap2_kopen_tekst' => 'Hier komt tekst voor die stap',
-    'stap2_verkopen_tekst' => 'Hier komt tekst voor die stap',
-    'stap3' => 'Etappe 3',
-    'stap3_kopen_tekst' => 'Hier komt tekst voor die stap',
-    'stap3_verkopen_tekst' => 'Hier komt tekst voor die stap',
-    'taal' => "NL",
+    'perfect' => 'Parfait!',
+    'restaurant' => 'Restaurant & Tearoom',
+    'bachten' => 'Leisele, situé "Bachten de Kupe", à la frontière Belge, caché dans le "Westhoek", une belle commune paysanne, avec une architecture protégée à 12km de Furne, 15km de la Côte, 25km d\'Ypres et 4km de Hondschoote en France. Village cinéaste lors du tournage du feuilleton VRT "De Bossen van Vlaanderen". Sur la place du village en face de l\'eglise et de la kiosk.',
+    'menukaart' => 'Gasthof \'t Voshol vous offre une carte variée avec une sélection de plats poissons ou viandes. Vous pouvez les consulter via le lien ci-dessous.',
+    'raadplegen' => 'Consulter la carte',
+    'foxgin' => '<strong>FOXGIN est un gin exclusif distilé en Belgique</strong>, produit à base d\'eau pure des Dolomites. Des accents d\'agrumes et de lavande se combinent afin de réaliser un bouquet Méditerranéen et frais. Composé par B. Dedeckere. <strong>Consommez avec modération.</strong>',
+    'bestellen' => 'Commandez votre Foxgin',
+    'troeven' => 'Depuis le début Gasthof \'t Voshol tient a ses <strong>atouts</strong>.',
+    'kwaliteit' => 'La Qualité et la Quantité sont nos points forts.',
+    'kwaliteit_tekst' => 'Depuis 1990 Gasthof \'t Voshol est la référence pour une cuisine fraiche et honnête.',
+    'genieten' => 'Profitez à tout âge',
+    'genieten_tekst' => 'Notre restaurant sait plaire à tout le monde. Du moment romantique ou diner de famille de taille, tout le monde s\'y retrouve chez Gasthof \'t Voshol.',
+    'knooppunt' => 'Carrefour de balades à vélo',
+    'knooppunt_tekst' => 'Leisele est un carrefour des balades à vélo. les cyclistes peuvent savourer une patisserie apétissante avant de continuer leur route.',
+    'duurzaam' => 'Horeca durable',
+    'duurzaam_tekst' => 'Gasthof \'t Voshol contribue à une vie durable et écologique. Depuis peux nous proposons même un point d\'alimentation pour vélos électriques.',
+    'fan' => '<strong>Vous êtes fan de Gasthof \'t Voshol?</strong> Partagez votre expérience avec vos amis et offrez leurs un bon de valeur Gasthof \'t Voshol. Cette attention sympathique est disponible dans le restaurant sur simple demande.',
+    'online_reserveren' => 'Chez Gasthof \'t Voshol vous pouvez <strong>réserver en ligne</strong>.</br>Réservez via notre formulaire et garantissez votre place dans notre restaurant!',
     'voornaam' => 'Prénom',
     'naam' => 'Nom',
+    'aantal' => 'Nombre de personnes',
+    'dag' => 'Date et heure de votre réservation',
     'email' => 'Email',
-    'tel' => 'Téléphone',
-    'adres' => 'Adresse du projet',
-    'stijl' => 'Style du projet',
-    'bestand' => 'Pièces jointes',
+    'telefoonnummer' => 'Numéro de téléphone',
+    'opmerkingen' => 'Remarques',
     'versturen' => 'Envoyer',
-    'beschrijving' => 'Description',
-    'klassiek' => 'Classique',
-    'modern' => 'Moderne',
-    'combinatie' => 'Combinaison',
-    'informatie' => 'Souhaitez-vous nous donner plus d\'infos ou de fichiers? N\'héistez pas à contacter <a href="mailto:vincentholvoet@gmail.com">Imaginn</a>.',
-    'ander' => 'Autre'
+    'opgepast' => 'Dag en uur gewenste reservatie',
+    'contactgegevens' => 'Coordonnées & Réseaux sociaux',
+    'adres' => 'Gasthof \'t Voshol</br>Leiseledorp 20</br>8691 Leisele</br>T: +32 (0)58 29 81 57</br>info@tvoshol.be',
+    'openingsuren' => 'Heures d\'ouverture'
 
 ];
