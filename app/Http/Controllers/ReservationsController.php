@@ -41,7 +41,7 @@ class ReservationsController extends Controller
 
             Mail::send('emails.send', [
 
-              'tekst' => 'Controleer je berichten op imaginn.'
+              'tekst' => 'Controleer je berichten op via de website.'
 
             ], function ($message)
             {
