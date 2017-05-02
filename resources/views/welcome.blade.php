@@ -146,7 +146,7 @@
         <div class="row m-y-md">
           <div class="col-xs-12">
             @foreach($cards as $card)
-              <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $card->menukaartNL) }}">@lang('messages.raaplegen')</a>
+              <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
             @endforeach
           </div>
         </div>
@@ -165,7 +165,7 @@
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
-            <button class="btn btn-primary m-b">@lang('messages.bestellen')</button>
+            @lang('message.verkrijgbaar')
           </div>
         </div>
       </div>
