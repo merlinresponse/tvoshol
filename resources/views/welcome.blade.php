@@ -163,11 +163,9 @@
         <p class="lead">
             @lang('messages.foxgin')
         </p>
-        <div class="row m-y-md">
-          <div class="col-xs-12">
-            @lang('message.verkrijgbaar')
-          </div>
-        </div>
+        <p class="lead">
+            @lang('messages.verkrijgbaar')
+        </p>
       </div>
       <div class="col-md-5 col-sm-6">
         <img
