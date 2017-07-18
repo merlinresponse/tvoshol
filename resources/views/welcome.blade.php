@@ -185,9 +185,9 @@
     <div class="block block-bordered-lg">
       <div class="container text-center app-translate-15" data-transition="entrance">
         <blockquote class="pull-quote">
-            <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>
+            <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->voornaam }}</h2>
           <p>
-            {{ $message->tekstNL }}
+            {{ $message->beschrijving }}
           </p>
         </blockquote>
       </div>
