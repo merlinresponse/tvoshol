@@ -74,19 +74,19 @@
     <div class="navbar-collapse collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li >
-          <a href="../#reserveren">@lang('messages.reserveren')</a>
+          <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#reserveren"}}">@lang('messages.reserveren')</a>
         </li>
         <li class="active">
-          <a href="../#waardebon">@lang('messages.waardebon')</a>
+          <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#waardebon"}}">@lang('messages.waardebon')</a>
         </li>
         <li >
-          <a href="../#menu">@lang('messages.menu')</a>
+          <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#menu"}}">@lang('messages.menu')</a>
         </li>
         <li >
-          <a href="../#gin">@lang('messages.gin')</a>
+          <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#gin"}}">@lang('messages.gin')</a>
         </li>
         <li >
-          <a href="../#contact">@lang('messages.contact')</a>
+          <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#contact"}}">@lang('messages.contact')</a>
         </li>
         <li >
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
