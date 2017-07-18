@@ -181,17 +181,30 @@
 
 @if(isset($messages))
     @foreach ($messages as $message)
+        @if(LaravelLocalization::getCurrentLocale() == "nl")
+            <div class="block block-bordered-lg">
+              <div class="container text-center app-translate-15" data-transition="entrance">
+                <blockquote class="pull-quote">
+                    <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>
+                  <p>
+                    {{ $message->tekstNL }}
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          @else
+            <div class="block block-bordered-lg">
+              <div class="container text-center app-translate-15" data-transition="entrance">
+                <blockquote class="pull-quote">
+                    <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelFR }}</h2>
+                  <p>
+                    {{ $message->tekstFR }}
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          @endif
 
-    <div class="block block-bordered-lg">
-      <div class="container text-center app-translate-15" data-transition="entrance">
-        <blockquote class="pull-quote">
-            <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->voornaam }}</h2>
-          <p>
-            {{ $message->beschrijving }}
-          </p>
-        </blockquote>
-      </div>
-    </div>
 
     @endforeach
 @endif
