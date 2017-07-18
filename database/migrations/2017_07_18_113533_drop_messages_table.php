@@ -12,7 +12,7 @@ class DropMessagesTable extends Migration
      */
     public function up()
     {
-        //
+      Schema::dropIfExists('messages');
     }
 
     /**
