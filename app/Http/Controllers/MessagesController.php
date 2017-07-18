@@ -72,10 +72,10 @@ class MessagesController extends Controller
 
         $message = new Message;
 
-        $message->titelNL = $request->titelNL;
-        $message->titelFR = $request->titelFR;
-        $message->tekstNL = $request->tekstNL;
-        $message->tekstFR = $request->tekstFR;
+        $message->voornaam = $request->titelNL;
+      //  $message->titelFR = $request->titelFR;
+        $message->beschrijving = $request->tekstNL;
+      //  $message->tekstFR = $request->tekstFR;
 
         $message->save();
 
@@ -139,10 +139,10 @@ class MessagesController extends Controller
 
         $message = Message::find($id);
 
-        $message->titelNL = Input::get('titelNL');
-        $message->titelFR = Input::get('titelFR');
-        $message->tekstNL = Input::get('tekstNL');
-        $message->tekstFR = Input::get('tekstFR');
+        $message->voornaam = Input::get('titelNL');
+    //    $message->titelFR = Input::get('titelFR');
+        $message->beschrijving = Input::get('tekstNL');
+      //  $message->tekstFR = Input::get('tekstFR');
 
         $message->save();
 

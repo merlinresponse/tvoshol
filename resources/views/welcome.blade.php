@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="author" content="responsestudios">
 
     <title>
 
-        Minimal &middot;
+        Gastoh 't Voshol &middot;
 
     </title>
 
