@@ -134,7 +134,7 @@
     <div class="row">
     <div class="col-md-7 col-sm-6">
         <img
-          src="img/meat_low.jpg"
+          src="../img/meat_low.jpg"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
@@ -146,7 +146,7 @@
         <div class="row m-y-md">
           <div class="col-xs-12">
             @foreach($cards as $card)
-              <a class="btn btn-small btn-info" href="{{ URL::to('/img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
+              <a class="btn btn-small btn-info" href="{{ URL::to('../img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
             @endforeach
           </div>
         </div>
