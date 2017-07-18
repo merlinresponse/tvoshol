@@ -26,6 +26,7 @@ class CreatePasswordResetsTable extends Migration
      */
     public function down()
     {
+      Schema::disableForeignKeyConstraints();
         Schema::drop('password_resets');
     }
 }

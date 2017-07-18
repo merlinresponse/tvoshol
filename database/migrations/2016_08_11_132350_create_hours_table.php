@@ -27,6 +27,7 @@ class CreateHoursTable extends Migration
      */
     public function down()
     {
+      Schema::disableForeignKeyConstraints();
         Schema::drop('hours');
     }
 }
