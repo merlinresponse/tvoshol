@@ -74,19 +74,19 @@
     <div class="navbar-collapse collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li >
-          <a href="/#reserveren">@lang('messages.reserveren')</a>
+          <a href="../#reserveren">@lang('messages.reserveren')</a>
         </li>
         <li class="active">
-          <a href="/#waardebon">@lang('messages.waardebon')</a>
+          <a href="../#waardebon">@lang('messages.waardebon')</a>
         </li>
         <li >
-          <a href="/#menu">@lang('messages.menu')</a>
+          <a href="../#menu">@lang('messages.menu')</a>
         </li>
         <li >
-          <a href="/#gin">@lang('messages.gin')</a>
+          <a href="../#gin">@lang('messages.gin')</a>
         </li>
         <li >
-          <a href="/#contact">@lang('messages.contact')</a>
+          <a href="../#contact">@lang('messages.contact')</a>
         </li>
         <li >
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -119,7 +119,7 @@
 
 <div class="block">
   <div class="container text-center app-translate-15" data-transition="entrance">
-    <img src="img/logo_tvoshol.gif">
+    <img src="../img/logo_tvoshol.gif">
     <blockquote class="pull-quote">
         <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">@lang('messages.restaurant')</h2>
       <p>
@@ -169,7 +169,7 @@
       </div>
       <div class="col-md-5 col-sm-6">
         <img
-          src="img/foxginetiket_fles.png"
+          src="../img/foxginetiket_fles.png"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
@@ -285,7 +285,7 @@
               <div class="block">
                 <div class="container">
 
-                    <img class="img-responsive slider-image center-block" src="{{ asset("img/uploads/" . $picture->bestand) }}">
+                    <img class="img-responsive slider-image center-block" src="{{ asset("../img/uploads/" . $picture->bestand) }}">
 
                 </div>
               </div>
@@ -309,7 +309,7 @@
         </p>
       </div>
       <div class="col-sm-7">
-        <img src="img/waardebon_crop.png" class="app-translate-5" data-transition="entrance">
+        <img src="../img/waardebon_crop.png" class="app-translate-5" data-transition="entrance">
         </div>
     </div>
   </div>
