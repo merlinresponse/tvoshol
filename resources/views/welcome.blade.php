@@ -270,6 +270,7 @@
   </div>
 </div>
 
+@if(isset($pictures))
 <div class="block block-bordered-lg">
   <div class="container">
     <div class="row pos-r">
@@ -299,6 +300,7 @@
       </div>
     </div>
 </div>
+@endif
 
 <div class="block block-bordered-lg block-overflow-hidden p-b-0 app-block-design">
   <div class="container">
