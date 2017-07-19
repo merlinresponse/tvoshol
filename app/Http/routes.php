@@ -28,13 +28,14 @@ Route::auth();
 
   });
 
+Route::resource('reservation','ReservationsController');
 //Route::get('/reservations', 'ReservationsController@index');
 //Route::get('/addreservation', 'ReservationsController@add');
 //Route::post('/reservations', 'ReservationsController@store');
 //Route::delete('/reservations/delete', 'ReservationsController@delete');
 
 /*Route::get('/shops/{shop}', 'ShopController@show');*/
-Route::resource('reservation','ReservationsController');
+
 
 Route::group(['middleware' => 'auth'], function(){
   Route::resource('message', 'MessagesController');
