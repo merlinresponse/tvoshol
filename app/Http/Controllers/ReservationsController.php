@@ -12,11 +12,13 @@ use App\Http\Requests;
 class ReservationsController extends Controller
 {
 
+  /*
   public function __construct()
   {
    $this->middleware('auth');
   }
-
+  */
+  
     public function index(){
 
         $reservations = Reservation::all();
