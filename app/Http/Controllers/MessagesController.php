@@ -80,7 +80,7 @@ class MessagesController extends Controller
 
         $message->titelNL = $request->titelNL;
         $message->titelFR = $request->titelFR;
-        $message->tesktNL = $request->tekstNL;
+        $message->tekstNL = $request->tekstNL;
         $message->tekstFR = $request->tekstFR;
 
         $message->save();
@@ -147,7 +147,7 @@ class MessagesController extends Controller
 
         $message->titelNL = Input::get('titelNL');
         $message->titelFR = Input::get('titelFR');
-        $message->tesktFR = Input::get('tekstNL');
+        $message->tekstFR = Input::get('tekstNL');
         $message->tekstFR = Input::get('tekstFR');
 
         $message->save();
