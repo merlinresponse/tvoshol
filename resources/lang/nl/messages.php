@@ -25,7 +25,7 @@ return [
     'restaurant' => 'Restaurant & Tearoom',
     'bachten' => '  Leisele, gelegen "Bachten de Kupe", aan de grens van ons Belgisch grondgebied, verdoken in de verre Westhoek, een mooie landelijke gemeente, met beschermd dorpsgezicht op zowat 12km van Veurne, 15km van de Kust, 25km van Ieper en 4km van het franse Hondschoote. Filmdorp tijdens de opnames van VRT-feuilleton "De Bossen van Vlaanderen". Op het dorpsplein rechtover de Kerk en de kiosk.',
     'menukaart' => 'Gasthof \'t Voshol biedt u een gevarieerde menukaart met een selectie van vis- en vleesgerechten. Raadpleeg onze kaart of activiteiten via onderstaande link.',
-    'raadplegen' => 'Menukaart raadplegen',
+    'raadplegen' => 'Kaart raadplegen',
     'foxgin' => '<strong>FOXGIN is een exclusieve in Belgie gestookte gin</strong>, gemaakt van het zuivere water uit de Dolomieten. Toetsen van citrus en lavendel combineren tot een fris en zuiders boeket. Samengesteld door B. Dedeckere. <strong>Enjoy Responsibly.</strong>',
     'bestellen' => 'Uw Foxgin bestellen',
     'troeven' => 'Sinds de start houdt Gasthof \'t Voshol vast aan deze <strong>troeven</strong>.',
