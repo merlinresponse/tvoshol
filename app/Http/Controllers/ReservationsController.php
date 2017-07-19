@@ -18,7 +18,7 @@ class ReservationsController extends Controller
    $this->middleware('auth');
   }
   */
-  
+
     public function index(){
 
         $reservations = Reservation::all();
@@ -61,7 +61,7 @@ class ReservationsController extends Controller
 
             });
 
-            return redirect('/')
+            return redirect('/nl')
             ->with('success', true)->with('message','Reservatie opgeslagen.');
 
           }
