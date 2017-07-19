@@ -54,7 +54,7 @@ class ReservationsController extends Controller
 
                 $message->from('noreply@tvoshol.be', 'Contact website');
                 $message->subject('Je hebt een reservatie aanvraag ontvangen.');
-                $message->to('voshol@telenet.be');
+                $message->to('maxime@responsestudios.com');
 
 
             });
