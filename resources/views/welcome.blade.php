@@ -145,9 +145,16 @@
         </p>
         <div class="row m-y-md">
           <div class="col-xs-12">
-            @foreach($cards as $card)
-              <a class="btn btn-small btn-info" href="{{ URL::to('../img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
-            @endforeach
+            @if(LaravelLocalization::getCurrentLocale() == 'nl')
+              @foreach($cards as $card)
+                <a class="btn btn-small btn-info" href="{{ URL::to('../img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
+              @endforeach
+            @else
+              @foreach($cards as $card)
+                <a class="btn btn-small btn-info" href="{{ URL::to('../img/cards/'. $card->menukaartFR) }}">@lang('messages.raadplegen')</a>
+              @endforeach
+            @endif
+
           </div>
         </div>
       </div>
