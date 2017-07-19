@@ -148,11 +148,11 @@
           <div class="col-xs-12">
             @if(LaravelLocalization::getCurrentLocale() == 'nl')
               @foreach($cards as $card)
-                <a class="btn btn-default" href="{{ URL::to('../img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
+                <a class="btn btn-default btn-large" href="{{ URL::to('../img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
               @endforeach
             @else
               @foreach($cards as $card)
-                <a class="btn btn-default" href="{{ URL::to('../img/cards/'. $card->menukaartFR) }}">@lang('messages.raadplegen')</a>
+                <a class="btn btn-default btn-large" href="{{ URL::to('../img/cards/'. $card->menukaartFR) }}">@lang('messages.raadplegen')</a>
               @endforeach
             @endif
 
