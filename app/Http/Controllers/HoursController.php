@@ -16,6 +16,12 @@ class HoursController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function __construct()
+     {
+      $this->middleware('auth');
+     }
+
     public function index()
     {
         $hours = Hour::orderBy('created_at', 'desc')->get();
@@ -40,7 +46,7 @@ class HoursController extends Controller
      */
     public function store(Request $request)
     {
-        
+
           $validator = Validator::make($request->all(), [
             'urenNL' => 'required',
             'urenFR' => 'required',
@@ -51,16 +57,16 @@ class HoursController extends Controller
                         ->withErrors($validator)
                         ->withInput();
         }
-        
-        
-        
+
+
+
         $hour = new Hour;
-        
+
         $hour->urenNL = $request->urenNL;
         $hour->urenFR = $request->urenFR;
-        
+
         $hour->save();
-        
+
         return redirect('/hour')
             ->with('success', true)->with('hour','Boodschap opgeslagen.');
     }
@@ -100,14 +106,14 @@ class HoursController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {        
+    {
         $hour = Hour::find($id);
-        
+
         $hour->urenNL = Input::get('urenNL');
         $hour->urenFR = Input::get('urenFR');
-        
+
         $hour->save();
-        
+
         return redirect('/hour');
     }
 
