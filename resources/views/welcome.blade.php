@@ -11,7 +11,7 @@
 
     <title>
 
-        Gastoh 't Voshol &middot;
+        Gasthof 't Voshol &middot;
 
     </title>
 
