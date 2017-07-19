@@ -35,11 +35,11 @@ Route::auth();
 
 /*Route::get('/shops/{shop}', 'ShopController@show');*/
 
-Route::resource('message', 'MessagesController');
-Route::resource('picture', 'PicturesController');
-Route::resource('hour', 'HoursController');
-Route::resource('card', 'CardsController');
 
 Route::group(['middleware' => 'auth'], function(){
+  Route::resource('message', 'MessagesController');
+  Route::resource('picture', 'PicturesController');
+  Route::resource('hour', 'HoursController');
+  Route::resource('card', 'CardsController');
   Route::resource('reservation','ReservationsController');
 });
