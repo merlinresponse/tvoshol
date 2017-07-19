@@ -16,7 +16,7 @@ class ReservationsController extends Controller
   {
    $this->middleware('auth');
   }
-  
+
     public function index(){
 
         $reservations = Reservation::all();
@@ -52,9 +52,9 @@ class ReservationsController extends Controller
             ], function ($message)
             {
 
-                $message->from('noreply@imaginn.be', 'Contact website');
-                $message->subject('Je hebt een bericht ontvangen.');
-                $message->to('maxime@responsestudios.com');
+                $message->from('noreply@tvoshol.be', 'Contact website');
+                $message->subject('Je hebt een reservatie aanvraag ontvangen.');
+                $message->to('voshol@telenet.be');
 
 
             });
