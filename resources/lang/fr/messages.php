@@ -26,7 +26,7 @@ return [
     'bachten' => 'Leisele, situé "Bachten de Kupe", à la frontière Belge, caché dans le "Westhoek", une belle commune paysanne, avec une architecture protégée à 12km de Furne, 15km de la Côte, 25km d\'Ypres et 4km de Hondschoote en France. Village cinéaste lors du tournage du feuilleton VRT "De Bossen van Vlaanderen". Sur la place du village en face de l\'eglise et de la kiosk.',
     'menukaart' => 'Gasthof \'t Voshol vous offre une carte variée avec une sélection de plats poissons ou viandes. Consulter notre carte ou nos activités via le lien ci-dessous.',
     'raadplegen' => 'Consulter la carte',
-    'foxgin' => '<strong>FOXGIN est un gin exclusif distilé en Belgique</strong>, produit à base d\'eau pure des Dolomites. Des accents d\'agrumes et de lavande se combinent afin de réaliser un bouquet Méditerranéen et frais. Composé par B. Dedeckere. <strong>Consommez avec modération.</strong>',
+    'foxgin' => '<strong>FOXGIN est un gin exclusif distilé en Italië</strong>, produit à base d\'eau pure des Dolomites. Des accents d\'agrumes et de lavande se combinent afin de réaliser un bouquet Méditerranéen et frais. Composé par B. Dedeckere. <strong>Consommez avec modération.</strong>',
     'bestellen' => 'Commandez votre Foxgin',
     'troeven' => 'Depuis le début Gasthof \'t Voshol tient a ses <strong>atouts</strong>.',
     'kwaliteit' => 'La Qualité et la Quantité sont nos points forts.',

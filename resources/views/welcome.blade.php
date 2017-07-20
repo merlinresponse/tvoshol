@@ -77,7 +77,7 @@
         <li >
           <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#reserveren"}}">@lang('messages.reserveren')</a>
         </li>
-        <li class="active">
+        <li >
           <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#waardebon"}}">@lang('messages.waardebon')</a>
         </li>
         <li >
