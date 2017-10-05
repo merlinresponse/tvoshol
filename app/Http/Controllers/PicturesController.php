@@ -19,7 +19,7 @@ class PicturesController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-  
+
 
     public function index()
     {
@@ -75,7 +75,7 @@ class PicturesController extends Controller
 
         $picture->save();
 
-      //  $file->move(public_path() . '/img/carousel', $filename);
+        $file->move(public_path() . '/img/carousel', $filename);
 
         return redirect('/picture')
             ->with('success', true)->with('picture','Boodschap opgeslagen.');
