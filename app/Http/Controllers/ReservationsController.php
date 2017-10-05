@@ -51,6 +51,7 @@ class ReservationsController extends Controller
 
             $reservation->save();
 
+            /*
             Mail::send('emails.send', [
 
               'tekst' => 'Controleer je berichten op via de website.'
@@ -64,6 +65,7 @@ class ReservationsController extends Controller
 
 
             });
+            */
 
             return redirect('/nl')
             ->with('success', true)->with('message','Reservatie opgeslagen.');
