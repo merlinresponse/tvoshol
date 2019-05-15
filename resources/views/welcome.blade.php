@@ -103,20 +103,7 @@
   </div>
 </nav>
 
-<div class="container">
-    <div class ="row">
-        <div class="col-md-12">
 
-            @if(Session::has('success'))
-            <div class="alert alert-success">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-            <strong>@lang('messages.perfect')</strong> {{ Session::get('message', '') }}
-            </div>
-            @endif
-
-        </div>
-    </div>
-</div>
 
 <div class="block">
   <div class="container text-center app-translate-15" data-transition="entrance">
