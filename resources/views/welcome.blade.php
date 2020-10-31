@@ -182,7 +182,7 @@
                 <blockquote class="pull-quote">
                     <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>
                   <p>
-                    {!! $message->tekstNL !!}
+                    {!! nl2br($message->tekstNL) !!}
                   </p>
                 </blockquote>
               </div>
@@ -193,7 +193,7 @@
                 <blockquote class="pull-quote">
                     <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelFR }}</h2>
                   <p>
-                    {!! $message->tekstFR !!}
+                    {!! nl2br($message->tekstFR) !!}
                   </p>
                 </blockquote>
               </div>
