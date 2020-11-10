@@ -75,6 +75,9 @@
     <div class="navbar-collapse collapse" id="navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li >
+          <a href="https://gasthoftvoshol.company.site/">Shop</a>
+        </li>
+        <li >
           <a href="{{"../" . LaravelLocalization::getCurrentLocale(). "/#reserveren"}}">@lang('messages.reserveren')</a>
         </li>
         <li >
