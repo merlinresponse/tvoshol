@@ -110,7 +110,7 @@
 
 <div class="block">
   <div class="container text-center app-translate-15" data-transition="entrance">
-    <div class="text-center">
+    <div class="row text-center">
     <img src="../img/logo_tvoshol.gif">
     </div>
     <blockquote class="pull-quote">
