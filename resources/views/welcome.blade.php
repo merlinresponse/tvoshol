@@ -123,14 +123,14 @@
 <div id="shop" class="block block-bordered-lg p-b-0 app-block-stats">
   <div class="container">
     <div class="row">
-    <div class="col-md-7 col-sm-6">
+    <div class="col-md-5 col-sm-6">
         <img
           src="../img/webshopvoshol3.png"
           class="app-translate-5"
           data-transition="entrance">
         <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
       </div>
-      <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
+      <div class="col-md-7 col-sm-6 text-xs-center text-sm-left">
         <p class="lead">
             @lang('messages.shop')
         </p>
