@@ -25,7 +25,7 @@ Route::auth();
     {
 
       Route::get('/', 'HomeController@index');
-      Route::get('/', 'HomeController@webshop');
+      Route::get('/webshop', 'HomeController@webshop');
 
   });
 
