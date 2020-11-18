@@ -110,129 +110,17 @@
 
 <div class="block">
   <div class="container text-center app-translate-15" data-transition="entrance">
-    <img src="../img/logo_tvoshol.gif">
-    <blockquote class="pull-quote">
-        <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">@lang('messages.restaurant')</h2>
-      <p>
-          @lang('messages.bachten')
+    @if(LaravelLocalization::getCurrentLocale() == 'fr')
+      <p class="lead">
+          Notre shop en ligne n'est pas encore disponible en Français. Vous pouvez consulter la version NL cî-dessous.
       </p>
-    </blockquote>
-  </div>
-</div>
-
-<div id="shop" class="block block-bordered-lg p-b-0 app-block-stats">
-  <div class="container">
-    <div class="row">
-    <div class="col-md-7 col-sm-6">
-        <img
-          src="../img/meat_low.jpg"
-          class="app-translate-5"
-          data-transition="entrance">
-        <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
-      </div>
-      <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
-        <p class="lead">
-            @lang('messages.shop')
-        </p>
-        <div class="row m-y-md">
-          <div class="col-xs-12">
-
-                <a class="btn btn-default btn-large" href="{{"../" . LaravelLocalization::getCurrentLocale(). "/webshop"}}">@lang('messages.gotoshop')</a>
-
-
-          </div>
+    @endif
+    <div id="my-store-39972429"></div>
+        <div>
+        <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?39972429&data_platform=code&data_date=2020-11-18" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-39972429");</script>
         </div>
       </div>
-    </div>
-  </div>
 </div>
-
-<div id="menu" class="block block-bordered-lg p-b-0 app-block-stats">
-  <div class="container">
-    <div class="row">
-    <div class="col-md-7 col-sm-6">
-        <img
-          src="../img/meat_low.jpg"
-          class="app-translate-5"
-          data-transition="entrance">
-        <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
-      </div>
-      <div class="col-md-5 col-sm-6 text-xs-center text-sm-left">
-        <p class="lead">
-            @lang('messages.menukaart')
-        </p>
-        <div class="row m-y-md">
-          <div class="col-xs-12">
-            @if(LaravelLocalization::getCurrentLocale() == 'nl')
-              @foreach($cards as $card)
-                <a class="btn btn-default btn-large" href="{{ URL::to('../img/cards/'. $card->menukaartNL) }}">@lang('messages.raadplegen')</a>
-              @endforeach
-            @else
-              @foreach($cards as $card)
-                <a class="btn btn-default btn-large" href="{{ URL::to('../img/cards/'. $card->menukaartFR) }}">@lang('messages.raadplegen')</a>
-              @endforeach
-            @endif
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div id="gin" class="block block-bordered-lg p-b-0 app-block-stats">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-sm-6 text-xs-center text-sm-left">
-        <p class="lead">
-            @lang('messages.foxgin')
-        </p>
-        <p class="lead">
-            @lang('messages.verkrijgbaar')
-        </p>
-      </div>
-      <div class="col-md-5 col-sm-6">
-        <img
-          src="../img/foxginetiket_fles.png"
-          class="app-translate-5"
-          data-transition="entrance">
-        <hr class="m-t-0 m-b-lg m-x-auto visible-xs">
-      </div>
-    </div>
-  </div>
-</div>
-
-
-@if(isset($messages))
-    @foreach ($messages as $message)
-        @if(LaravelLocalization::getCurrentLocale() == "nl")
-            <div class="block block-bordered-lg">
-              <div class="container text-center app-translate-15" data-transition="entrance">
-                <blockquote class="pull-quote">
-                    <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelNL }}</h2>
-                  <p>
-                    {!! nl2br($message->tekstNL) !!}
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          @else
-            <div class="block block-bordered-lg">
-              <div class="container text-center app-translate-15" data-transition="entrance">
-                <blockquote class="pull-quote">
-                    <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">{{ $message->titelFR }}</h2>
-                  <p>
-                    {!! nl2br($message->tekstFR) !!}
-                  </p>
-                </blockquote>
-              </div>
-            </div>
-          @endif
-
-
-    @endforeach
-@endif
 
 
 <div class="block block-bordered-lg">

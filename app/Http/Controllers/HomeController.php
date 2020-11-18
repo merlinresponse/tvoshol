@@ -49,4 +49,16 @@ class HomeController extends Controller
 
         return view('welcome', compact('messages','cards','hours','pictures'));
     }
+
+    public function webshop()
+    {
+
+        $messages = Message::orderBy('created_at', 'desc')->take(1)->get();
+        $cards = Card::orderBy('created_at', 'desc')->take(1)->get();
+        $hours = Hour::orderBy('created_at', 'desc')->take(1)->get();
+        $pictures = Picture::orderBy('created_at', 'desc')->get();
+
+
+        return view('webshop', compact('messages','cards','hours','pictures'));
+    }
 }

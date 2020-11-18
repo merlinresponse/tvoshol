@@ -51,6 +51,8 @@ return [
     'contactgegevens' => 'Coordonnées & Réseaux sociaux',
     'adres' => 'Gasthof \'t Voshol</br>Leiseledorp 20</br>8691 Leisele</br>T: +32 (0)58 29 81 57</br>voshol@telenet.be',
     'openingsuren' => 'Heures d\'ouverture',
-    'verkrijgbaar' => 'Foxgin est exclusivement disponible dans le restaurant.'
+    'verkrijgbaar' => 'Foxgin est exclusivement disponible dans le restaurant.',
+    'shop' => 'Notre boutique en ligne vous propose des produits pour vivre une expérience Gasthof \'t Voshol chez vous ou chez vos amis. Découvrez la vite via le bouton cî-dessous.',
+    'gotoshop' => 'Visiter la boutique'
 
 ];
