@@ -110,7 +110,9 @@
 
 <div class="block">
   <div class="container text-center app-translate-15" data-transition="entrance">
+    <div class="text-center">
     <img src="../img/logo_tvoshol.gif">
+    </div>
     <blockquote class="pull-quote">
         <h2 class="block-title m-b-sm text-uppercase app-myphone-brand">@lang('messages.restaurant')</h2>
       <p>
